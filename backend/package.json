@@ -1,0 +1,28 @@
+{
+  "name": "mangofilter-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API de MangoFilter: consulta tiendas reales, normaliza, agrupa el mismo producto y calcula envío por ciudad.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.4.1",
+    "fastify": "^5.12.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "vitest": "^5.1.0"
+  }
+}

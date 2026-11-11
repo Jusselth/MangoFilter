@@ -1,192 +1,195 @@
-# Arquitectura — MangoFilter (app móvil)
+# Arquitectura — MangoFilter
 
-Este documento describe cómo está construida la app. Para el registro de cambios, cómo ejecutarla y las decisiones tomadas, ver [documentacion.md](documentacion.md).
+Este documento describe cómo está construido el sistema. Para el registro de cambios, cómo ejecutarlo y las decisiones tomadas, ver [documentacion.md](documentacion.md).
 
 ## 1. Vista general
 
-MangoFilter es una app **React Native + Expo (SDK 58) + TypeScript** que consulta varias tiendas en paralelo, normaliza sus respuestas a un esquema común, identifica cuándo distintas publicaciones son el mismo producto y ordena las ofertas por **Costo Total = Precio Base + Costo de Envío** (ecuación 1 de la propuesta) y por tiempo de entrega.
+MangoFilter es un **monorepo con dos proyectos**:
 
-En esta versión, la arquitectura federada de la propuesta (API Gateway → adaptadores → normalización → caché) **corre dentro de la app** con datos de demostración. Las capas están separadas por contratos, de modo que pasar a un backend real cambia los adaptadores y la `baseQuery`, no las pantallas.
-
-```
-┌──────────────────────────────────────────────────────────────────────┐
-│ PRESENTACIÓN   src/app (Expo Router)  ·  src/components              │
-│   Pantallas, navegación tipada, tema (React Context)                 │
-├──────────────────────────────────────────────────────────────────────┤
-│ ESTADO         src/store (Redux Toolkit)                             │
-│   ├─ Estado de servidor: RTK Query  (api.ts)                         │
-│   └─ Estado de cliente: slices preferences / filters / saved / history│
-│      persistidos con redux-persist + AsyncStorage                    │
-├──────────────────────────────────────────────────────────────────────┤
-│ DATOS          src/data                                              │
-│   aggregator.ts  → consulta federada con timeout + tolerancia a fallos│
-│   cache.ts       → caché L1 (TTL + LRU) por tienda y búsqueda         │
-│   adapters/      → un adaptador por tienda (formato crudo → Offer)    │
-│   servicesRepository.ts → módulo de servicios                         │
-│   seed/          → catálogo de demostración                          │
-├──────────────────────────────────────────────────────────────────────┤
-│ DOMINIO        src/domain  (TypeScript puro, sin React, 100% testeable)│
-│   types.ts       → esquema canónico                                  │
-│   normalize.ts   → limpieza de texto, marca, huella de modelo         │
-│   jaroWinkler.ts → similitud de cadenas                              │
-│   matching.ts    → Entity Resolution (agrupar el mismo producto)      │
-│   logistics.ts   → ciudades, zonas, políticas de envío por tienda     │
-│   ranking.ts     → costo total, puntaje multicriterio, filtros        │
-└──────────────────────────────────────────────────────────────────────┘
-```
-
-**Regla de dependencias:** cada capa solo importa de las de abajo. `domain` no conoce React, Redux ni Expo.
-
-## 2. Estructura de carpetas
-
-```
-src/
-├─ app/                        Rutas (Expo Router = React Navigation por archivos)
-│  ├─ _layout.tsx              Proveedores + Stack raíz
-│  ├─ (tabs)/_layout.tsx       Bottom Tabs: Buscar · Servicios · Guardados · Ajustes
-│  ├─ (tabs)/index.tsx         Inicio / búsqueda
-│  ├─ (tabs)/services.tsx      Catálogo de servicios
-│  ├─ (tabs)/saved.tsx         Productos guardados con variación de precio
-│  ├─ (tabs)/settings.tsx      Ciudad, criterio, tema, hápticos, datos
-│  ├─ search.tsx               Resultados (?q=)
-│  ├─ product/[id].tsx         Comparación entre tiendas (?q=)
-│  ├─ service/[id].tsx         Comparación de integradores de un servicio
-│  ├─ filters.tsx              Modal de filtros
-│  └─ city.tsx                 Modal de ciudad de entrega
-├─ components/                 UI reutilizable (ui.tsx, ProductCard, OfferCard, …)
-├─ hooks/                      useRankedSearch, useHaptics
-├─ store/                      Redux: index.ts, api.ts, slices/
-├─ theme/                      palette.ts (tokens), ThemeContext.tsx
-├─ data/                       aggregator, cache, adapters, repositorio, seed
-├─ domain/                     Lógica pura + __tests__
-└─ utils/format.ts             Moneda COP, textos para lector de pantalla
-```
-
-## 3. Navegación
-
-Se usa **Expo Router**, que está construido sobre **React Navigation** (Native Stack + Bottom Tabs) y añade rutas por archivo, rutas tipadas (`experiments.typedRoutes`) y **deep links** automáticos con el esquema `mangofilter://`.
-
-```
-Stack (raíz)
-├─ (tabs)  ── Bottom Tabs
-│   ├─ index      /            Buscar
-│   ├─ services   /services    Servicios
-│   ├─ saved      /saved       Guardados
-│   └─ settings   /settings    Ajustes
-├─ search          /search?q=…
-├─ product/[id]    /product/<idOferta>?q=…
-├─ service/[id]    /service/<idServicio>
-├─ filters         (modal)
-└─ city            (modal)
-```
-
-Ejemplos de deep link: `mangofilter://search?q=parlante%20jbl`, `mangofilter://service/netflix`.
-
-## 4. Gestión de estado
-
-Se separan explícitamente los tres tipos de estado vistos en el curso, usando **Redux Toolkit** y **React Context** (no Zustand):
-
-| Tipo | Dónde | Qué guarda | Persistencia |
-|---|---|---|---|
-| **Servidor** | RTK Query (`store/api.ts`) | Resultados de búsqueda, servicios | Caché en memoria (5 min sin uso) |
-| **Global de cliente** | Slices de Redux | Ciudad, criterio, tema, hápticos · filtros · guardados · historial | `redux-persist` + AsyncStorage para preferences, saved e history. Los filtros duran solo la sesión |
-| **Tema** | React Context (`ThemeContext`) | Paleta resuelta, degradados, sombras | Deriva de `preferences.themeMode` + esquema del sistema |
-| **Local** | `useState` | Texto del buscador, orden en servicios | — |
-
-**Por qué RTK Query:** ya trae caché por argumentos, deduplica peticiones (Guardados e Inicio pueden pedir la misma búsqueda sin duplicarla), maneja estados de carga y error y permite `refetch`. Hoy usa `fakeBaseQuery` sobre el agregador local. Con un backend real se cambia por `fetchBaseQuery({ baseUrl })`.
-
-**Ordenar sin volver a consultar:** `useRankedSearch` combina los datos crudos de RTK Query con criterio y filtros (Redux) usando `useMemo`. Cambiar un filtro reordena al instante, sin llamar de nuevo a las tiendas.
-
-## 5. Flujo de una búsqueda
-
-```
-Usuario escribe "audífonos sony"
-  → dispatch(addQuery)                         historial persistido
-  → router.push('/search?q=…')
-  → useRankedSearch → useSearchProductsQuery({ q, city })   (RTK Query)
-      → aggregator.searchProducts(q, city)
-          ├─ cleanText(q)                       normaliza la consulta
-          ├─ Promise.all(adaptadores)           EN PARALELO, cada uno con:
-          │    ├─ caché L1 (clave tienda|consulta) → si hay, no hay red
-          │    ├─ fetchRaw() con timeout 3 s + AbortController
-          │    └─ normalize(raw, city) → Offer (precio COP + envío + días)
-          ├─ groupOffers(offers)                Entity Resolution
-          └─ { groups, stores: [estado por tienda], tookMs }
-  → rankResults(groups, criterio, filtros)      motor multicriterio
-  → FlatList de ProductCard
-```
-
-- **Tolerancia a fallos:** si una tienda falla o supera el timeout se marca `error` o `timeout`, la UI avisa ("No respondió: …") y muestra lo que sí llegó.
-- **La caché guarda la respuesta cruda**, no la normalizada. Al cambiar de ciudad se recalculan envío y días sin consultar de nuevo a las tiendas.
-- **TTL por tienda:** Mercado Libre 2 min (marketplace volátil), Falabella y Alkosto 10 min, Homecenter 15 min, AliExpress 30 min.
-
-## 6. Normalización y Entity Resolution
-
-### Esquema canónico (`Offer`)
-`id` (ID_Interno = `tienda:sku`), `title`, `normalizedTitle`, `brand`, `category`, `basePrice`, `listPrice`, `shippingCost`, `deliveryDays`, `totalCost`, `url`, `bulky`, `notes`.
-
-### Adaptadores (formatos crudos distintos a propósito)
-| Tienda | Formato simulado | Traducción |
+| Carpeta | Qué es | Tecnología |
 |---|---|---|
-| Mercado Libre | `{ id, title, price, original_price, category_id: 'MCO1648', attributes[] }` | Mapea categoría MCO y detecta "voluminoso" por atributo |
-| Falabella | precios como texto `"1.399.990"` en lista `prices[]` | Parseo de miles y elección entre `internetPrice` y `normalPrice` |
-| AliExpress | `salePrice: { amount, currency: 'USD' }`, títulos en inglés | Conversión USD→COP y nota de importación |
-| Homecenter | `precioNormal` / `precioOferta` | Elige la oferta si existe |
-| Alkosto | `price.value: "1234900.00"` y `discountPercent` | Reconstruye el precio anterior |
+| `backend/` | API Gateway: consulta las tiendas reales, normaliza, agrupa el mismo producto y cotiza el envío a la ciudad | Node.js 20+, TypeScript, Fastify 5, Vitest |
+| `frontend/` | App móvil (y web) que consume la API | Expo SDK 58, React Native, Expo Router, Redux Toolkit + RTK Query, React Context |
 
-### Algoritmo de coincidencia (`matching.ts`)
-1. **Limpieza** (`cleanText`): minúsculas, quita tildes, une códigos (`WH-1000XM5 → wh1000xm5`), unifica unidades (`128 GB → 128gb`, `55" → 55in`, `4 litros → 4l`), quita ordinales (`2da → 2`) y aplica alias (`ps5 → playstation 5`).
-2. **Tokens significativos:** se descarta el ruido comercial y descriptivo ("envío gratis", "inalámbricos", colores…).
-3. **Reglas duras** (similitud = 0): categoría distinta, marca distinta o **huella de modelo en conflicto**. La huella son los tokens con dígitos, y hay conflicto si cada lado tiene un código que el otro no tiene (`128gb` vs `256gb`). Si un lado es subconjunto del otro, no hay conflicto (una tienda omitió "5G").
-4. **Código de fabricante compartido** (tipo MPN, p. ej. `du7000`, `dcd7781d2`): si ambos lo tienen, se ignoran números sueltos ("139 cm", "2 baterías") y la similitud mínima es 0.92.
-5. **Similitud** = 0.65 × solapamiento difuso de tokens (Jaro‑Winkler por token) + 0.35 × Jaro‑Winkler del nombre normalizado.
-6. **Clustering voraz por enlace promedio** con umbral 0.80. Una oferta no se une a un grupo que ya tenga otra de la **misma tienda**, para no fusionar variantes.
-7. **Nombre del grupo:** el título más "central" del grupo. Se prefieren títulos que no estén TODO EN MAYÚSCULAS y que vengan de tiendas locales en español.
+**No hay datos simulados.** Cada búsqueda consulta en vivo las APIs públicas de las tiendas.
 
-La prueba `matching.test.ts` pasa **todo el catálogo** por los adaptadores y verifica que se reconstruyan exactamente los 25 productos, incluidos los "señuelos" que no deben fusionarse: XM4 vs XM5, Galaxy A35 vs A55, iPhone 15 de 128 GB vs 256 GB.
+```
+┌────────────────────────── frontend/ (Expo) ───────────────────────────┐
+│  Pantallas (Expo Router) ─ componentes ─ tema (React Context)          │
+│  Redux: preferences · filters · saved · history (redux-persist)        │
+│  RTK Query ──── GET /api/search?q=&city= ─── /api/cities ─ /api/stores │
+│  Ranking multicriterio en el cliente (reordena sin volver a consultar) │
+└───────────────────────────────┬────────────────────────────────────────┘
+                                │ HTTP/JSON (red local o servidor)
+┌───────────────────────────────▼──────── backend/ (Fastify) ───────────┐
+│  app.ts         rutas + validación (JSON Schema) + CORS                │
+│  aggregator.ts  consulta federada en paralelo, timeout por tienda,     │
+│                 tolerancia a fallos, caché de respuesta (5 min)        │
+│  domain/        normalize · jaroWinkler · matching (Entity Resolution) │
+│  stores/        adaptadores: vtex.ts (5 tiendas) · mercadolibre.ts     │
+│  cache.ts       caché L1 TTL + LRU (búsquedas 10 min, envíos 15 min)   │
+└───────┬──────────────┬──────────────┬──────────────┬──────────────┬───┘
+        ▼              ▼              ▼              ▼              ▼
+   Olímpica         Jumbo         Carulla       Pepe Ganga    Panamericana   (+ Mercado Libre opcional)
+   ── APIs públicas VTEX: Intelligent Search + Simulación de carrito ──
+```
 
-> La propuesta menciona *embeddings* de texto locales. En esta versión se reemplazaron por huellas de modelo y códigos de fabricante, que son deterministas, no requieren un modelo en el dispositivo y resultan muy precisos en electrónica y hogar. Quedan como mejora futura del lado servidor.
+## 2. Fuentes de datos (todas reales y gratuitas)
 
-## 7. Logística y motor multicriterio
+Se verificó en vivo (noviembre 2026) qué tiendas colombianas exponen datos de forma gratuita:
 
-- **Ciudades por zona** (principal, intermedia, remota). Cada tienda tiene su política: tarifa por zona, umbral de envío gratis, días por zona y reglas para artículos voluminosos (multiplicador, pérdida del envío gratis y días extra).
-- **Costo total** = precio base + envío (`ranking.totalCost`).
-- **Puntaje** (menor = mejor): `w · costoNorm + (1 − w) · díasNorm`, normalizando con min‑max dentro del conjunto comparado. A los días se les aplica raíz cuadrada, porque pasar de 1 a 3 días pesa más que pasar de 15 a 17.
-- **Criterios:** `precio` (w = 1), `equilibrado` (w = 0.5) y `rapidez` (w = 0.15).
-- **Filtros:** presupuesto máximo (sobre el total), solo envío gratis, días máximos, tiendas y categorías.
-- **Servicios:** `netCost = precioMensual − valor de los servicios incluidos` (por ejemplo, un plan de fibra que incluye Netflix). Se ordena por precio o por "más valor".
+| Tienda | Fuente | Estado |
+|---|---|---|
+| Olímpica, Jumbo, Carulla, Pepe Ganga, Panamericana | APIs públicas de la plataforma **VTEX** (las mismas que usa la web de cada tienda) | ✅ Activas, sin clave |
+| Mercado Libre | API oficial con OAuth (`client_credentials`) | ⚙️ Opcional: requiere registrar una app gratuita. **No verificado** sin credenciales |
+| Éxito | VTEX, pero bloqueado por Cloudflare | ❌ |
+| Alkosto, Ktronix, Homecenter, Falabella | Sin API pública (solo endpoints internos no documentados) | ❌ No se usan |
 
-## 8. Diseño visual
+### APIs VTEX utilizadas
+1. **Intelligent Search:** `GET {tienda}/api/io/_v/api/intelligent-search/product_search/?query=…&count=12&locale=es-CO&hideUnavailableItems=true`. Devuelve productos, marca, categorías, imágenes, enlace y precio publicado por vendedor.
+2. **Simulación de carrito:** `POST {tienda}/api/checkout/pub/orderForms/simulation?sc=1` con `{ items, country: "COL", postalCode: <código DANE> }`. Devuelve el **precio real para esa ciudad** (algunas tiendas tienen precios regionales) y las **opciones de envío** con costo y tiempo (`"3bd"` = 3 días hábiles). Una sola llamada cotiza todos los productos de la tienda.
 
-- **Tokens** en `theme/palette.ts`: paleta mango (amarillo maduro → naranja) con un verde hoja como acento, en versión clara y oscura, más espaciado, radios y tamaño táctil mínimo de 44.
-- **Degradados** (`expo-linear-gradient`) solo en tres lugares: el encabezado de inicio, el botón principal y el borde de la "mejor opción". Así el degradado señala lo importante sin saturar.
-- **Sombras cálidas** de tres niveles (`theme.shadow(n)`): `elevation` en Android y `shadow*` en iOS y web.
-- **Tipografía Inter** (sugerida en la sección 4.4 de la propuesta) en cuatro pesos.
-- **Animaciones** mínimas con Reanimated: entrada escalonada de resultados y skeleton de carga, ambas con `ReduceMotion.System`.
+> **Hallazgo:** VTEX Colombia no usa el código postal de 6 dígitos sino el **código DANE del municipio** (Bogotá `11001`, Medellín `05001`…). Con el código postal normal la simulación responde "no se puede enviar". Las ciudades están en `backend/src/cities.ts`.
 
-## 9. Accesibilidad (mapeo a la sección 4 de la propuesta)
+## 3. Backend
 
-| Requisito | Implementación |
+### Estructura
+```
+backend/
+├─ src/
+│  ├─ server.ts           arranque (lee .env, escucha en 0.0.0.0:3000)
+│  ├─ app.ts              rutas Fastify
+│  ├─ aggregator.ts       consulta federada + orden por relevancia
+│  ├─ cities.ts           22 ciudades con código DANE y postal
+│  ├─ cache.ts            TtlCache (TTL + LRU)
+│  ├─ http.ts             fetch con timeout/cancelación y errores tipados
+│  ├─ domain/
+│  │  ├─ types.ts         CONTRATO de la API (copiado en frontend/src/api/types.ts)
+│  │  ├─ normalize.ts     limpieza de texto, marca, huella de modelo, búsqueda
+│  │  ├─ jaroWinkler.ts   similitud de cadenas
+│  │  └─ matching.ts      Entity Resolution
+│  └─ stores/
+│     ├─ types.ts         contrato StoreAdapter
+│     ├─ vtex.ts          adaptador genérico VTEX (búsqueda + simulación)
+│     ├─ mercadolibre.ts  adaptador opcional (OAuth)
+│     └─ registry.ts      lista de tiendas activas
+├─ test/                  Vitest + fixtures con respuestas REALES de Jumbo/Carulla
+└─ scripts/
+   ├─ smoke.ts            prueba en vivo contra las tiendas (npm run smoke)
+   └─ capture-fixtures.mjs  vuelve a capturar fixtures reales
+```
+
+### API REST
+| Método y ruta | Respuesta |
 |---|---|
-| Lectores de pantalla | `accessibilityRole`, `accessibilityLabel` con resúmenes hablados ("1.349.900 pesos"), `accessibilityLiveRegion` en el conteo de resultados, encabezados con `role="header"` |
-| Texto ampliable hasta 200 % | `maxFontSizeMultiplier={2}` en todo el texto; los layouts usan `flexWrap` y nada de alturas fijas en el texto |
-| No depender solo del color | "Mejor opción" lleva etiqueta e ícono además del borde; chips seleccionados muestran ✓; variación de precio con flecha y texto ("Bajó $X") |
-| Contraste AA | Texto oscuro sobre naranja (el blanco no llega a 4.5:1); `brandStrong #B4500E` sobre blanco ≈ 5.1:1 |
-| Objetivos táctiles de 44 pt | `MIN_TOUCH`, `hitSlop` en chips y segmentos |
-| Sin arrastre obligatorio | Los filtros usan chips y un campo numérico; no hay sliders |
-| Sin patrones oscuros | Sin pop‑ups, contadores falsos ni banners parpadeantes |
-| Modo oscuro | Tema claro/oscuro/sistema |
-| Memoria de trabajo | Historial de búsquedas, filtros que se conservan en la sesión, resumen "mejor / más barato / más rápido" |
+| `GET /api/health` | `{ ok, stores[], time }` |
+| `GET /api/stores` | `StoreRef[]`: id, nombre, iniciales, color, sitio web |
+| `GET /api/cities` | `City[]`: id, nombre, departamento, DANE, postal |
+| `GET /api/search?q=<2..80>&city=<id>` | `SearchResponse`: grupos de ofertas, estado por tienda, ciudad, `fetchedAt` |
 
-## 10. Pruebas y calidad
+Los parámetros se validan con JSON Schema: una búsqueda de menos de 2 caracteres o una ciudad desconocida devuelve 400.
 
-- `npm test`: 19 pruebas de Jest (jest-expo) sobre dominio y datos: Jaro‑Winkler con valores de referencia, normalización, reconstrucción del catálogo completo, envío por zona, criterios de orden, filtros, costo neto de servicios y un agregador con tienda caída, tienda lenta (timeout) y reuso de caché al cambiar de ciudad.
-- `npm run typecheck`: TypeScript estricto.
-- `npm run lint`: ESLint con `eslint-config-expo`.
+### Flujo de una búsqueda
+```
+GET /api/search?q=freidora de aire&city=bogota
+ → aggregator: ¿respuesta en caché (ciudad|consulta)? → devolverla
+ → Promise.all(adaptadores) — cada uno con timeout de 9 s y AbortController:
+     vtex.search(q, city)
+       1. Intelligent Search (caché 10 min por consulta)
+       2. Filtra por relevancia: todos los términos deben aparecer en el nombre
+          (descarta "soporte para TV" al buscar "televisor samsung")
+       3. Elige SKU + vendedor con stock y precio > 0
+       4. Simulación con el DANE de la ciudad (caché 15 min)
+          · sin opción de envío "delivery" → cuenta como "no despacha"
+          · si la simulación falla → precio publicado y envío "por confirmar"
+       5. → Offer (precio regional, envío más barato, días hábiles, imagen, URL)
+ → groupOffers()  — Entity Resolution entre tiendas
+ → sortByRelevance()  — posición en la tienda, con un empujón a los productos
+                        comparados en varias tiendas
+ → { groups, stores: [ok/timeout/error, count, notShippable, latencia], fetchedAt }
+```
 
-## 11. Camino a producción
+### Entity Resolution (`domain/matching.ts`)
+Lo ajustaron casos reales observados en las tiendas:
 
-1. Implementar el **API Gateway** de la propuesta. En la app, cambiar `fakeBaseQuery` por `fetchBaseQuery` en `store/api.ts`. Los adaptadores, la normalización y el matching se mueven al servidor sin cambios, porque son TypeScript puro.
-2. Agregar la caché L1 Redis y la L2 documental (historial de precios) del lado servidor. La app ya muestra la variación desde que se guardó un producto y podría mostrar el historial completo.
-3. Autenticación (JWT en `expo-secure-store`) si se sincronizan los guardados entre dispositivos.
-4. Builds con EAS (`eas build`, `eas submit`).
+1. **Limpieza:** minúsculas, sin tildes, unión de códigos (`WH-1000XM5 → wh1000xm5`), unidades (`3.8 Litros → 38l`, `55" → 55in`), ordinales y alias.
+2. **Reglas duras** (similitud = 0):
+   - marcas distintas (se usa el campo `brand` de la tienda, normalizado: "LG Electronics" → `lg`);
+   - **palabras de variante** distintas: *pro, max, plus, mini, ultra, lite, fe, reacondicionado…* (iPhone 17 ≠ iPhone 17 Pro; AirPods Pro ≠ AirPods Max);
+   - **huellas de modelo en conflicto**: tokens con dígitos (`128gb` vs `256gb`, `3.8 L` vs `4 L`);
+   - **precio más de 1.9 veces mayor** que el de la otra oferta (regla de cordura: el mismo producto nuevo rara vez cuesta el doble en otra tienda).
+3. **Código de fabricante compartido** (`FN101GY`, `UN55M75HAKXZL`): similitud mínima de 0.92.
+4. **Similitud** = 0.65 × solapamiento difuso de tokens (Jaro‑Winkler) + 0.35 × Jaro‑Winkler del nombre normalizado. El umbral es 0.80.
+5. **Clustering** voraz por enlace promedio, como máximo una oferta por tienda en cada grupo.
+6. **La categoría no se compara:** cada tienda usa su propia taxonomía.
+
+Los colores se tratan como ruido: el mismo modelo en otro color se considera el mismo producto.
+
+### Caché y cortesía con las tiendas
+- Respuesta completa por (ciudad, consulta): 5 min.
+- Búsqueda por tienda: 10 min. Simulación por (tienda, ciudad, SKUs): 15 min.
+- Una búsqueda hace, como máximo, 2 peticiones por tienda.
+- `Cache-Control: max-age=120` en `/api/search`.
+
+## 4. Frontend
+
+### Estructura
+```
+frontend/src/
+├─ app/                      Expo Router (React Navigation por archivos)
+│  ├─ _layout.tsx            Redux + PersistGate + ThemeProvider + Stack
+│  ├─ (tabs)/                Buscar · Guardados · Ajustes
+│  ├─ search.tsx             resultados (?q=)
+│  ├─ product/[id].tsx       comparación entre tiendas (?q=)
+│  ├─ filters.tsx            modal
+│  └─ city.tsx               modal
+├─ api/types.ts              copia del contrato del backend
+├─ config.ts                 URL del backend (auto-detecta la IP de Expo)
+├─ store/                    Redux Toolkit + RTK Query (api.ts) + slices
+├─ domain/ranking.ts         motor multicriterio en el cliente
+├─ hooks/                    useRankedSearch, useHaptics
+├─ components/               ui.tsx, ProductCard, OfferCard, ProductImage, …
+├─ theme/                    paleta mango + ThemeContext
+└─ utils/format.ts           COP, días, contraste del logo de tienda
+```
+
+### Estado
+| Tipo | Dónde | Persistencia |
+|---|---|---|
+| Servidor | RTK Query (`fetchBaseQuery` → backend) | Caché en memoria; ciudades 24 h, tiendas 1 h, búsquedas 5 min |
+| Cliente global | Slices `preferences` (ciudad, criterio, tema, hápticos), `filters`, `saved`, `history` | redux-persist + AsyncStorage (los filtros duran solo la sesión) |
+| Tema | React Context `ThemeProvider` / `useTheme` | Deriva de `preferences.themeMode` + sistema |
+
+### Conexión con el backend (`config.ts`)
+1. Si está definido `EXPO_PUBLIC_API_URL` en `frontend/.env`, se usa esa URL.
+2. Si no, en el celular con Expo Go se usa **la misma IP desde la que Expo sirve la app**, con el puerto 3000. Así funciona en la red local sin configurar nada.
+3. En web se usa `http://<host>:3000`.
+
+### Motor multicriterio (en el cliente)
+- **Costo total** = precio regional + envío cotizado.
+- **Puntaje** = `w · costoNorm + (1 − w) · √díasNorm`, con `w` = 1 (Menor precio), 0.5 (Equilibrado) o 0.15 (Llega antes).
+- Una oferta con **envío desconocido nunca es la "mejor"** si hay otra con envío confirmado.
+- **Orden de la lista:** el del backend (relevancia). El criterio decide la mejor oferta *dentro* de cada producto. Ordenar toda la lista por precio pondría primero los accesorios baratos.
+- **Filtros:** presupuesto (sobre el total), días máximos, solo envío gratis y tiendas.
+
+## 5. Diseño y accesibilidad
+- Paleta mango clara y oscura (`theme/palette.ts`), degradados solo en el encabezado, el botón principal y la mejor opción, sombras cálidas y tipografía Inter.
+- **Fotos reales** de producto (`expo-image`, caché en disco) sobre fondo blanco, para que se vean bien también en modo oscuro.
+- Logo textual de tienda con color de texto calculado por contraste WCAG (`readableOn`).
+- Lectores de pantalla: etiquetas habladas ("606.219 pesos"), región viva para el conteo de resultados y encabezados semánticos.
+- Texto ampliable hasta 200 %, objetivos táctiles de 44 pt, nada que dependa solo del color, sin sliders de arrastre y sin patrones oscuros.
+
+## 6. Pruebas
+| Proyecto | Comando | Qué cubre |
+|---|---|---|
+| backend | `npm test` (19) | Jaro‑Winkler, normalización, matching con títulos reales (agrupa Ninja FN101GY y Oster 3.8 L; separa iPhone 17/17 Pro, 3.8 L/4 L y precios 3x), adaptador VTEX con fixtures reales (DANE, "no despacha", simulación caída, caché), agregador (tienda caída, timeout, caché por ciudad), orden por relevancia y API HTTP |
+| backend | `npm run smoke -- "<consulta>" <ciudad>` | Consulta **en vivo** las tiendas reales |
+| frontend | `npm test` (7) | Criterios, envío desconocido, filtros y contraste del logo |
+| ambos | `npm run typecheck`, `npx expo lint`, `npx expo-doctor` | Tipos, lint y configuración de Expo |
+
+## 7. Limitaciones conocidas y siguientes pasos
+- Las APIs de VTEX son **públicas pero no son un acuerdo comercial**: pueden cambiar o limitar el tráfico. La caché reduce la carga, y el adaptador está aislado para cambiarlo fácilmente.
+- Mercado Libre requiere credenciales y no se pudo probar en vivo.
+- Despliegue: el backend puede ir a cualquier servicio de Node (Render, Railway, Fly.io). Luego se define `EXPO_PUBLIC_API_URL` y se compila la app con EAS.
+- Caché L2 (historial de precios) y Redis compartido cuando haya más de una instancia.
+- El módulo de Servicios (streaming, internet) se retiró: no existe una API gratuita con precios reales en Colombia.

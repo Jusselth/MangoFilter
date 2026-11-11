@@ -1,0 +1,1444 @@
+{
+ "items": [
+  {
+   "id": "3706370",
+   "requestIndex": 0,
+   "quantity": 1,
+   "seller": "15359",
+   "sellerChain": [
+    "15359"
+   ],
+   "tax": 0,
+   "priceValidUntil": null,
+   "price": 180000000,
+   "listPrice": 339990000,
+   "rewardValue": 0,
+   "sellingPrice": 180000000,
+   "offerings": [],
+   "priceTags": [],
+   "measurementUnit": "un",
+   "unitMultiplier": 1,
+   "parentItemIndex": null,
+   "parentAssemblyBinding": null,
+   "availability": "withoutStock",
+   "catalogProvider": "vrn:vtex.catalog-api-proxy:-:carulla:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/3706370",
+   "priceDefinition": {
+    "calculatedSellingPrice": 180000000,
+    "total": 180000000,
+    "sellingPrices": [
+     {
+      "value": 180000000,
+      "quantity": 1
+     }
+    ],
+    "reason": null,
+    "pricePerUnit": 180000000
+   },
+   "priceTable": null
+  },
+  {
+   "id": "3688430",
+   "requestIndex": 1,
+   "quantity": 1,
+   "seller": "11342",
+   "sellerChain": [
+    "11342"
+   ],
+   "tax": 0,
+   "priceValidUntil": null,
+   "price": 244990000,
+   "listPrice": 500000000,
+   "rewardValue": 0,
+   "sellingPrice": 244990000,
+   "offerings": [],
+   "priceTags": [],
+   "measurementUnit": "un",
+   "unitMultiplier": 1,
+   "parentItemIndex": null,
+   "parentAssemblyBinding": null,
+   "availability": "available",
+   "catalogProvider": "vrn:vtex.catalog-api-proxy:-:carulla:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/3688430",
+   "priceDefinition": {
+    "calculatedSellingPrice": 244990000,
+    "total": 244990000,
+    "sellingPrices": [
+     {
+      "value": 244990000,
+      "quantity": 1
+     }
+    ],
+    "reason": null,
+    "pricePerUnit": 244990000
+   },
+   "priceTable": null
+  },
+  {
+   "id": "3775652",
+   "requestIndex": 2,
+   "quantity": 1,
+   "seller": "1",
+   "sellerChain": [
+    "1"
+   ],
+   "tax": 0,
+   "priceValidUntil": "2027-11-11T22:09:37Z",
+   "price": 2999990000,
+   "listPrice": 2999990000,
+   "rewardValue": 0,
+   "sellingPrice": 899990000,
+   "offerings": [],
+   "priceTags": [
+    {
+     "name": "discount@price-table-cmpnoalimentos-83e12668-496d-4510-b522-ffb1e7f0a8f1#bee69ef0-4c5a-4a79-af26-46160de0bd01",
+     "value": -2100000000,
+     "rawValue": -21000000,
+     "isPercentual": false,
+     "identifier": null,
+     "owner": "carulla",
+     "sourceSystem": null
+    }
+   ],
+   "measurementUnit": "un",
+   "unitMultiplier": 1,
+   "parentItemIndex": null,
+   "parentAssemblyBinding": null,
+   "availability": "available",
+   "catalogProvider": "vrn:vtex.catalog-api-proxy:-:carulla:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/3775652",
+   "priceDefinition": {
+    "calculatedSellingPrice": 899990000,
+    "total": 899990000,
+    "sellingPrices": [
+     {
+      "value": 899990000,
+      "quantity": 1
+     }
+    ],
+    "reason": null,
+    "pricePerUnit": 899990000
+   },
+   "priceTable": null
+  },
+  {
+   "id": "3856073",
+   "requestIndex": 3,
+   "quantity": 1,
+   "seller": "10158",
+   "sellerChain": [
+    "10158"
+   ],
+   "tax": 0,
+   "priceValidUntil": null,
+   "price": 272990000,
+   "listPrice": 340900000,
+   "rewardValue": 0,
+   "sellingPrice": 272990000,
+   "offerings": [],
+   "priceTags": [],
+   "measurementUnit": "un",
+   "unitMultiplier": 1,
+   "parentItemIndex": null,
+   "parentAssemblyBinding": null,
+   "availability": "available",
+   "catalogProvider": "vrn:vtex.catalog-api-proxy:-:carulla:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/3856073",
+   "priceDefinition": {
+    "calculatedSellingPrice": 272990000,
+    "total": 272990000,
+    "sellingPrices": [
+     {
+      "value": 272990000,
+      "quantity": 1
+     }
+    ],
+    "reason": null,
+    "pricePerUnit": 272990000
+   },
+   "priceTable": null
+  }
+ ],
+ "logisticsInfo": [
+  {
+   "itemIndex": 0,
+   "addressId": null,
+   "selectedSla": null,
+   "selectedDeliveryChannel": null,
+   "quantity": 1,
+   "shipsTo": [
+    "COL"
+   ],
+   "slas": [
+    {
+     "id": "Express",
+     "deliveryChannel": "delivery",
+     "name": "Entrega Express",
+     "deliveryIds": [],
+     "shippingEstimate": "6bd",
+     "shippingEstimateDate": null,
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 1318500,
+     "listPrice": 1318500,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": false,
+      "friendlyName": null,
+      "address": null,
+      "additionalInfo": null,
+      "dockId": null
+     },
+     "pickupPointId": null,
+     "pickupDistance": null,
+     "polygonName": null,
+     "transitTime": null
+    }
+   ],
+   "deliveryChannels": [
+    {
+     "id": "delivery"
+    }
+   ]
+  },
+  {
+   "itemIndex": 1,
+   "addressId": null,
+   "selectedSla": null,
+   "selectedDeliveryChannel": null,
+   "quantity": 1,
+   "shipsTo": [
+    "COL"
+   ],
+   "slas": [
+    {
+     "id": "Express",
+     "deliveryChannel": "delivery",
+     "name": "Entrega Express",
+     "deliveryIds": [],
+     "shippingEstimate": "6bd",
+     "shippingEstimateDate": null,
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 5655000,
+     "listPrice": 5655000,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": false,
+      "friendlyName": null,
+      "address": null,
+      "additionalInfo": null,
+      "dockId": null
+     },
+     "pickupPointId": null,
+     "pickupDistance": null,
+     "polygonName": null,
+     "transitTime": null
+    }
+   ],
+   "deliveryChannels": [
+    {
+     "id": "delivery"
+    }
+   ]
+  },
+  {
+   "itemIndex": 2,
+   "addressId": null,
+   "selectedSla": null,
+   "selectedDeliveryChannel": null,
+   "quantity": 1,
+   "shipsTo": [
+    "COL"
+   ],
+   "slas": [
+    {
+     "id": "COORDINADORA_B1BOGOTA",
+     "deliveryChannel": "delivery",
+     "name": "COORDINADORA_B1BOGOTA",
+     "deliveryIds": [
+      {
+       "courierId": "COORDINADORA_B1BOGOTA",
+       "warehouseId": "0083",
+       "dockId": "0083",
+       "courierName": "COORDINADORA_B1BOGOTA",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "3bd",
+     "shippingEstimateDate": "2026-11-17T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 17572200,
+     "listPrice": 17572200,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": false,
+      "friendlyName": null,
+      "address": null,
+      "additionalInfo": null,
+      "dockId": null
+     },
+     "pickupPointId": null,
+     "pickupDistance": 0,
+     "polygonName": "",
+     "transitTime": "3bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0088)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0088)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Colina",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0088",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.0665183,
+        4.7347153
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0088",
+     "pickupDistance": 2.69558709694,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0281)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0281)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Floresta",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0281",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Av. Carrera 68",
+       "number": "90 - 88 ",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.0739124,
+        4.6865188
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0281",
+     "pickupDistance": 2.7134464279099997,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0086)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0086)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Calle 80",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0086",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.0806858,
+        4.6840189
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0086",
+     "pickupDistance": 3.1311152769,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0303)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0303)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Unicentro Bogota",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0303",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Av. 15",
+       "number": "123 - 30 local 1233 ",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.041438,
+        4.703801
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0303",
+     "pickupDistance": 3.4923931667000003,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0081)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0081)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Country",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0081",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.0345176,
+        4.712903
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0081",
+     "pickupDistance": 4.17388780853,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0355)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0355)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Alamos",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0355",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Transversal 96",
+       "number": "70 A 85 ",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.114679,
+        4.700667
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0355",
+     "pickupDistance": 4.86099206583,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0093)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0093)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Suba",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0093",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.097415,
+        4.748257
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0093",
+     "pickupDistance": 4.98782062247,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0092)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0092)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Norte",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0092",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.044934,
+        4.754195
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0092",
+     "pickupDistance": 5.64842042924,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0091)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0091)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Occidente",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0091",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1225974,
+        4.7211182
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0091",
+     "pickupDistance": 5.71439709506,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_4052)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_4052)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito WOW Nuestro Bogota",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_4052",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Cra 86",
+       "number": "63-20",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.117224,
+        4.6832449
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_4052",
+     "pickupDistance": 5.872601927110001,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0307)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0307)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Plaza Salitre",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0307",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Cra 68 B No 40 - 39",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.109895,
+        4.65315001
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0307",
+     "pickupDistance": 7.64858312369,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0356)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0356)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Gran Estación",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0356",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Av. Esperanza",
+       "number": "62 - 49 Local 134 ",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1014608,
+        4.6482223
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0356",
+     "pickupDistance": 7.66770724653,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0094)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0094)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Chapinero",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0094",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.066034,
+        4.6393523
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0094",
+     "pickupDistance": 7.95009869048,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_4029)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_4029)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito La Felicidad",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_4029",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Carrera 72 A",
+       "number": "18-90",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1259339,
+        4.6521693
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_4029",
+     "pickupDistance": 8.8314716448,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0089)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0089)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Fontibon",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0089",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.15350001,
+        4.67195001
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0089",
+     "pickupDistance": 10.01095586681,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_4043)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_4043)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito mall plaza NQS",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_4043",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Carrera 30 ",
+       "number": "19 - 80",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.0860231,
+        4.6184231
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_4043",
+     "pickupDistance": 10.3521119417,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0084)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0084)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Americas",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0084",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1225721,
+        4.6310034
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0084",
+     "pickupDistance": 10.46920036368,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0282)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0282)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Tintal Caf",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0282",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "Av. carrera 86",
+       "number": "6-37 local 177 Centro comercial TINTAL ",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1646001,
+        4.64971001
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0282",
+     "pickupDistance": 12.29913300824,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0283)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0283)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Nuevo Kennedy",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0283",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogotá, D.c.",
+       "state": "Bogotá, D.C.",
+       "country": "COL",
+       "street": "Carrera 78 K",
+       "number": "37 A 53 Sur ",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1543654,
+        4.6235417
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0283",
+     "pickupDistance": 13.29818587788,
+     "polygonName": "",
+     "transitTime": "5bd"
+    },
+    {
+     "id": "CompraRecoge_0083 (ptorecogida_0083)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CompraRecoge_0083 (ptorecogida_0083)",
+     "deliveryIds": [
+      {
+       "courierId": "CompraRecoge_0083",
+       "warehouseId": "0083",
+       "dockId": "0083",
+       "courierName": "CompraRecoge_0083",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "1bd",
+     "shippingEstimateDate": "2026-11-12T23:59:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Villa Mayor",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0083",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1190393,
+        4.5944214
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0083",
+     "pickupDistance": 13.90298206318,
+     "polygonName": "",
+     "transitTime": "1bd"
+    },
+    {
+     "id": "CedicomFunza (ptorecogida_0083)",
+     "deliveryChannel": "pickup-in-point",
+     "name": "CedicomFunza (ptorecogida_0083)",
+     "deliveryIds": [
+      {
+       "courierId": "CedicomFunza",
+       "warehouseId": "0935",
+       "dockId": "0935",
+       "courierName": "CedicomFunza",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": "2026-11-19T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 0,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": true,
+      "friendlyName": "Exito Villa Mayor",
+      "address": {
+       "addressType": "pickup",
+       "receiverName": null,
+       "addressId": "ptorecogida_0083",
+       "isDisposable": true,
+       "postalCode": "11001",
+       "city": "Bogota",
+       "state": "Cundinamarca",
+       "country": "COL",
+       "street": "",
+       "number": "",
+       "neighborhood": "",
+       "complement": "",
+       "reference": null,
+       "geoCoordinates": [
+        -74.1190393,
+        4.5944214
+       ]
+      },
+      "additionalInfo": "",
+      "dockId": "0935"
+     },
+     "pickupPointId": "1_ptorecogida_0083",
+     "pickupDistance": 13.90298206318,
+     "polygonName": "",
+     "transitTime": "5bd"
+    }
+   ],
+   "deliveryChannels": [
+    {
+     "id": "pickup-in-point"
+    },
+    {
+     "id": "delivery"
+    }
+   ]
+  },
+  {
+   "itemIndex": 3,
+   "addressId": null,
+   "selectedSla": null,
+   "selectedDeliveryChannel": null,
+   "quantity": 1,
+   "shipsTo": [
+    "COL"
+   ],
+   "slas": [
+    {
+     "id": "Express",
+     "deliveryChannel": "delivery",
+     "name": "Entrega Express",
+     "deliveryIds": [],
+     "shippingEstimate": "5bd",
+     "shippingEstimateDate": null,
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 3606700,
+     "listPrice": 3606700,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": false,
+      "friendlyName": null,
+      "address": null,
+      "additionalInfo": null,
+      "dockId": null
+     },
+     "pickupPointId": null,
+     "pickupDistance": null,
+     "polygonName": null,
+     "transitTime": null
+    }
+   ],
+   "deliveryChannels": [
+    {
+     "id": "delivery"
+    }
+   ]
+  }
+ ],
+ "messages": [
+  {
+   "code": "withoutStock",
+   "text": "El ítem Televisor Samsung 55 Pulgadas Qled Uhd4k Smart Tv Qn55q7faakxzl no tiene inventario",
+   "status": "error",
+   "fields": {
+    "ean": "8806097146728",
+    "itemIndex": "0",
+    "skuName": "Televisor Samsung 55 Pulgadas Qled Uhd4k Smart Tv Qn55q7faakxzl"
+   }
+  }
+ ]
+}

@@ -1,0 +1,4791 @@
+{
+ "products": [
+  {
+   "cacheId": "sp-433936",
+   "productId": "433936",
+   "description": "Pulgadas: 55, Smart TV: Si, Resolución: 4K, Tipo de Pantalla: Mini LED, Conectividad: Wifi",
+   "productName": "Televisor Samsung 55'' Pulgadas Mini LED Smart TV UN55M75HAKXZL",
+   "productReference": "3746501",
+   "linkText": "televisor-samsung-55-pulgadas-mini-led-smart-tv-un55m75hakxzl-3746501",
+   "brand": "SAMSUNG",
+   "brandId": 14258,
+   "link": "/televisor-samsung-55-pulgadas-mini-led-smart-tv-un55m75hakxzl-3746501/p",
+   "categories": [
+    "/Televisores Y Audio/Televisión/Televisores/",
+    "/Televisores Y Audio/Televisión/",
+    "/Televisores Y Audio/"
+   ],
+   "categoryId": "2000670",
+   "priceRange": {
+    "sellingPrice": {
+     "highPrice": 1899900,
+     "lowPrice": 1899900
+    },
+    "listPrice": {
+     "highPrice": 3849900,
+     "lowPrice": 3849900
+    }
+   },
+   "specificationGroups": [
+    {
+     "originalName": "Medidas",
+     "name": "Medidas",
+     "specifications": [
+      {
+       "originalName": "Medidas de la Pantalla en Diagonal",
+       "name": "Medidas de la Pantalla en Diagonal",
+       "values": [
+        "139.7"
+       ]
+      },
+      {
+       "originalName": "Dimensiones con Base",
+       "name": "Dimensiones con Base",
+       "values": [
+        "76 x 122.46 x 19.9"
+       ]
+      },
+      {
+       "originalName": "Dimensiones sin Base",
+       "name": "Dimensiones sin Base",
+       "values": [
+        "70.78 X 122.46 X 7.66"
+       ]
+      },
+      {
+       "originalName": "Peso con Base",
+       "name": "Peso con Base",
+       "values": [
+        "10.3"
+       ]
+      },
+      {
+       "originalName": "Peso sin Base",
+       "name": "Peso sin Base",
+       "values": [
+        "10"
+       ]
+      },
+      {
+       "originalName": "Pulgadas",
+       "name": "Pulgadas",
+       "values": [
+        "55\""
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr ESPECIFICACIONES TÉCNICAS",
+     "name": "Gr ESPECIFICACIONES TÉCNICAS",
+     "specifications": [
+      {
+       "originalName": "Cupones con Descuento",
+       "name": "Cupones con Descuento",
+       "values": [
+        "''"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr Especificaciones de Producto",
+     "name": "Gr Especificaciones de Producto",
+     "specifications": [
+      {
+       "originalName": "Vendido por",
+       "name": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Componentes",
+     "name": "Componentes",
+     "specifications": [
+      {
+       "originalName": "Entrada Coaxial",
+       "name": "Entrada Coaxial",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas HDMI",
+       "name": "Número de Entradas HDMI",
+       "values": [
+        "3 Entradas"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas USB 2.0",
+       "name": "Número de Entradas USB 2.0",
+       "values": [
+        "1 Entrada"
+       ]
+      },
+      {
+       "originalName": "Incluye",
+       "name": "Incluye",
+       "values": [
+        "Cable de poder, Control Remoto, Manual del Usuario"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Otras Características",
+     "name": "Otras Características",
+     "specifications": [
+      {
+       "originalName": "Origen",
+       "name": "Origen",
+       "values": [
+        "Importado"
+       ]
+      },
+      {
+       "originalName": "País de Origen",
+       "name": "País de Origen",
+       "values": [
+        "México"
+       ]
+      },
+      {
+       "originalName": "Diseño",
+       "name": "Diseño",
+       "values": [
+        "Plano"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Filtros",
+     "name": "Filtros",
+     "specifications": [
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "Mini LED"
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Observaciones y Recomendaciones",
+     "name": "Observaciones y Recomendaciones",
+     "specifications": [
+      {
+       "originalName": "Condición Equipo",
+       "name": "Condición Equipo",
+       "values": [
+        "Nuevo"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr Configuraciones",
+     "name": "Gr Configuraciones",
+     "specifications": [
+      {
+       "originalName": "ProductData",
+       "name": "ProductData",
+       "values": [
+        "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Garantía y Líneas de Soporte",
+     "name": "Garantía y Líneas de Soporte",
+     "specifications": [
+      {
+       "originalName": "Datos Servicio Técnico",
+       "name": "Datos Servicio Técnico",
+       "values": [
+        "https://www.samsung.com/co/support/contact/#onlinesupport"
+       ]
+      },
+      {
+       "originalName": "Garantía Mínima Presunta",
+       "name": "Garantía Mínima Presunta",
+       "values": [
+        "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+       ]
+      },
+      {
+       "originalName": "Garantía Proveedor",
+       "name": "Garantía Proveedor",
+       "values": [
+        "12 meses"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Características Destacadas",
+     "name": "Características Destacadas",
+     "specifications": [
+      {
+       "originalName": "Marca",
+       "name": "Marca",
+       "values": [
+        "SAMSUNG"
+       ]
+      },
+      {
+       "originalName": "Tipo de Producto",
+       "name": "Tipo de Producto",
+       "values": [
+        "Smart TV"
+       ]
+      },
+      {
+       "originalName": "Color",
+       "name": "Color",
+       "values": [
+        "Negro"
+       ]
+      },
+      {
+       "originalName": "Modelo",
+       "name": "Modelo",
+       "values": [
+        "2026"
+       ]
+      },
+      {
+       "originalName": "EAN",
+       "name": "EAN",
+       "values": [
+        "8806097960843"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "Mini LED"
+       ]
+      },
+      {
+       "originalName": "Conectividad",
+       "name": "Conectividad",
+       "values": [
+        "Wifi"
+       ]
+      },
+      {
+       "originalName": "Conexión",
+       "name": "Conexión",
+       "values": [
+        "HDMI,Anynet,LAN,USB"
+       ]
+      },
+      {
+       "originalName": "Compatibilidad TDT",
+       "name": "Compatibilidad TDT",
+       "values": [
+        "Si"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Funciones",
+     "name": "Funciones",
+     "specifications": [
+      {
+       "originalName": "Sintonizador Digital",
+       "name": "Sintonizador Digital",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      },
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Resolución Pantalla",
+       "name": "Resolución Pantalla",
+       "values": [
+        "3840 x 2160"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "allSpecifications",
+     "name": "allSpecifications",
+     "specifications": [
+      {
+       "originalName": "Cupones con Descuento",
+       "name": "Cupones con Descuento",
+       "values": [
+        "''"
+       ]
+      },
+      {
+       "originalName": "Vendido por",
+       "name": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "originalName": "ProductData",
+       "name": "ProductData",
+       "values": [
+        "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+       ]
+      },
+      {
+       "originalName": "Marca",
+       "name": "Marca",
+       "values": [
+        "SAMSUNG"
+       ]
+      },
+      {
+       "originalName": "Tipo de Producto",
+       "name": "Tipo de Producto",
+       "values": [
+        "Smart TV"
+       ]
+      },
+      {
+       "originalName": "Color",
+       "name": "Color",
+       "values": [
+        "Negro"
+       ]
+      },
+      {
+       "originalName": "Modelo",
+       "name": "Modelo",
+       "values": [
+        "2026"
+       ]
+      },
+      {
+       "originalName": "EAN",
+       "name": "EAN",
+       "values": [
+        "8806097960843"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "Mini LED"
+       ]
+      },
+      {
+       "originalName": "Conectividad",
+       "name": "Conectividad",
+       "values": [
+        "Wifi"
+       ]
+      },
+      {
+       "originalName": "Conexión",
+       "name": "Conexión",
+       "values": [
+        "HDMI,Anynet,LAN,USB"
+       ]
+      },
+      {
+       "originalName": "Compatibilidad TDT",
+       "name": "Compatibilidad TDT",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sintonizador Digital",
+       "name": "Sintonizador Digital",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      },
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Resolución Pantalla",
+       "name": "Resolución Pantalla",
+       "values": [
+        "3840 x 2160"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Entrada Coaxial",
+       "name": "Entrada Coaxial",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas HDMI",
+       "name": "Número de Entradas HDMI",
+       "values": [
+        "3 Entradas"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas USB 2.0",
+       "name": "Número de Entradas USB 2.0",
+       "values": [
+        "1 Entrada"
+       ]
+      },
+      {
+       "originalName": "Incluye",
+       "name": "Incluye",
+       "values": [
+        "Cable de poder, Control Remoto, Manual del Usuario"
+       ]
+      },
+      {
+       "originalName": "Medidas de la Pantalla en Diagonal",
+       "name": "Medidas de la Pantalla en Diagonal",
+       "values": [
+        "139.7"
+       ]
+      },
+      {
+       "originalName": "Dimensiones con Base",
+       "name": "Dimensiones con Base",
+       "values": [
+        "76 x 122.46 x 19.9"
+       ]
+      },
+      {
+       "originalName": "Dimensiones sin Base",
+       "name": "Dimensiones sin Base",
+       "values": [
+        "70.78 X 122.46 X 7.66"
+       ]
+      },
+      {
+       "originalName": "Peso con Base",
+       "name": "Peso con Base",
+       "values": [
+        "10.3"
+       ]
+      },
+      {
+       "originalName": "Peso sin Base",
+       "name": "Peso sin Base",
+       "values": [
+        "10"
+       ]
+      },
+      {
+       "originalName": "Pulgadas",
+       "name": "Pulgadas",
+       "values": [
+        "55\""
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      },
+      {
+       "originalName": "Origen",
+       "name": "Origen",
+       "values": [
+        "Importado"
+       ]
+      },
+      {
+       "originalName": "País de Origen",
+       "name": "País de Origen",
+       "values": [
+        "México"
+       ]
+      },
+      {
+       "originalName": "Diseño",
+       "name": "Diseño",
+       "values": [
+        "Plano"
+       ]
+      },
+      {
+       "originalName": "Condición Equipo",
+       "name": "Condición Equipo",
+       "values": [
+        "Nuevo"
+       ]
+      },
+      {
+       "originalName": "Datos Servicio Técnico",
+       "name": "Datos Servicio Técnico",
+       "values": [
+        "https://www.samsung.com/co/support/contact/#onlinesupport"
+       ]
+      },
+      {
+       "originalName": "Garantía Mínima Presunta",
+       "name": "Garantía Mínima Presunta",
+       "values": [
+        "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+       ]
+      },
+      {
+       "originalName": "Garantía Proveedor",
+       "name": "Garantía Proveedor",
+       "values": [
+        "12 meses"
+       ]
+      },
+      {
+       "originalName": "sellerId",
+       "name": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ]
+    }
+   ],
+   "skuSpecifications": [],
+   "productClusters": [
+    {
+     "id": "137",
+     "name": "all"
+    },
+    {
+     "id": "31412",
+     "name": "publitas-bloque-3"
+    },
+    {
+     "id": "44512",
+     "name": "J.ELECTRO CUPON  DTOAPEX  100000 SDPC-173654 DY"
+    },
+    {
+     "id": "45147",
+     "name": "J.ELECTRO CUPON  JUMBO8 80000 SDPC-175667 DY"
+    },
+    {
+     "id": "45148",
+     "name": "J.P INT CUPON ELECTRODTO 100000 SDPC-175681 DY"
+    },
+    {
+     "id": "45537",
+     "name": "JUMBO CUPON ELECTRO 80.000 26-08-18"
+    },
+    {
+     "id": "45610",
+     "name": "CUPON  80 MIL  26-08-20"
+    },
+    {
+     "id": "45611",
+     "name": "CUPON 100MIL 26-08-20"
+    },
+    {
+     "id": "45937",
+     "name": "Bono 80.000 Ecommerce 26-09-3"
+    },
+    {
+     "id": "46393",
+     "name": "LAVADORAS NEVERAS Y TELEVISION 26-09-23"
+    },
+    {
+     "id": "46396",
+     "name": "Smart Tv HISENSE 55QD5ESV+Barra HS1000 26-09-23"
+    },
+    {
+     "id": "46397",
+     "name": "Tv LG 50NU855BPSA/ MABE rma31 26-09-23"
+    },
+    {
+     "id": "46430",
+     "name": "CAIXUN C50KAUGQ/SAMSUNG UN55U8000HKXZL 26-09-23"
+    },
+    {
+     "id": "46466",
+     "name": "HISENSE 55QD5ESV/CAIXUN C43KAFZQ 26-09-24"
+    },
+    {
+     "id": "46468",
+     "name": "SAMSUNG UN70U8000HKXZL/LG 65NU850BPSA 26-09-23"
+    },
+    {
+     "id": "46620",
+     "name": "LG 55QNED74BSA/HISENSE 65QD5SV barra 26-10-1"
+    },
+    {
+     "id": "46632",
+     "name": "TELEVISORES, BARRAS Y PARLANTES DE SONIDO 26-10-1"
+    },
+    {
+     "id": "46673",
+     "name": "Tv LG 50NU855BPSA/CAIXUN C43KAFZQ BARRA 26-10-6"
+    },
+    {
+     "id": "46807",
+     "name": "CUPON DE ELECTRO $120 TMC $100 26-10-9"
+    },
+    {
+     "id": "47155",
+     "name": "Smart Tv UHD 4K 65 CAIXUN C65KAUG 26-10-21"
+    },
+    {
+     "id": "47289",
+     "name": "HASTA 50% TMC EN TELEVISORES SAMSUNG 26-10-28"
+    },
+    {
+     "id": "47325",
+     "name": "CARRUSEL TELEVISORES 26-10-28"
+    },
+    {
+     "id": "47360",
+     "name": "Tv SAMSUNG UN70U8000HKXZL/CAIXUN C43KAFZQ 26-10-29"
+    },
+    {
+     "id": "47363",
+     "name": "TV SAMSUNG UN55U8000FKXZL/CAIXUN C75VHUGQ 26-10-28"
+    },
+    {
+     "id": "47389",
+     "name": "Smart Tv QLED 4K 50 CAIXUN C50VAUGQ 26-10-29"
+    },
+    {
+     "id": "47433",
+     "name": "TEL BARRA Y TORRES DE SONIDO SAMSUNG 26-11-4"
+    },
+    {
+     "id": "47441",
+     "name": "TV CAIXUN C43KAFZQ/LG 55QNED74BSA.AW  26-11-4"
+    },
+    {
+     "id": "47494",
+     "name": "TV SAMSUNG UN70U8000HKXZLCAIXUN C55KAUZQ 26-11-5/"
+    },
+    {
+     "id": "47522",
+     "name": "TV SAMSUNG UN55M75HAKXZL 26-11-9"
+    },
+    {
+     "id": "47533",
+     "name": "LG, CAIXUN Y SAMSUNG 26-11-10"
+    },
+    {
+     "id": "47580",
+     "name": "COLECCION MARRON 26-11-11"
+    },
+    {
+     "id": "47582",
+     "name": "ELECTRODOMESTICOS Y TELEVISORES 26-11-11"
+    }
+   ],
+   "clusterHighlights": [],
+   "properties": [
+    {
+     "name": "Cupones con Descuento",
+     "originalName": "Cupones con Descuento",
+     "values": [
+      "''"
+     ]
+    },
+    {
+     "name": "Vendido por",
+     "originalName": "Vendido por",
+     "values": [
+      "Jumbo"
+     ]
+    },
+    {
+     "name": "ProductData",
+     "originalName": "ProductData",
+     "values": [
+      "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+     ]
+    },
+    {
+     "name": "Marca",
+     "originalName": "Marca",
+     "values": [
+      "SAMSUNG"
+     ]
+    },
+    {
+     "name": "Tipo de Producto",
+     "originalName": "Tipo de Producto",
+     "values": [
+      "Smart TV"
+     ]
+    },
+    {
+     "name": "Color",
+     "originalName": "Color",
+     "values": [
+      "Negro"
+     ]
+    },
+    {
+     "name": "Modelo",
+     "originalName": "Modelo",
+     "values": [
+      "2026"
+     ]
+    },
+    {
+     "name": "EAN",
+     "originalName": "EAN",
+     "values": [
+      "8806097960843"
+     ]
+    },
+    {
+     "name": "Tipo de Pantalla",
+     "originalName": "Tipo de Pantalla",
+     "values": [
+      "Mini LED"
+     ]
+    },
+    {
+     "name": "Conectividad",
+     "originalName": "Conectividad",
+     "values": [
+      "Wifi"
+     ]
+    },
+    {
+     "name": "Conexión",
+     "originalName": "Conexión",
+     "values": [
+      "HDMI,Anynet,LAN,USB"
+     ]
+    },
+    {
+     "name": "Compatibilidad TDT",
+     "originalName": "Compatibilidad TDT",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Sintonizador Digital",
+     "originalName": "Sintonizador Digital",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Sistema Operativo",
+     "originalName": "Sistema Operativo",
+     "values": [
+      "Tizen OS"
+     ]
+    },
+    {
+     "name": "Resolución",
+     "originalName": "Resolución",
+     "values": [
+      "4K Ultra HD"
+     ]
+    },
+    {
+     "name": "Resolución Pantalla",
+     "originalName": "Resolución Pantalla",
+     "values": [
+      "3840 x 2160"
+     ]
+    },
+    {
+     "name": "Smart TV",
+     "originalName": "Smart TV",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Entrada Coaxial",
+     "originalName": "Entrada Coaxial",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Número de Entradas HDMI",
+     "originalName": "Número de Entradas HDMI",
+     "values": [
+      "3 Entradas"
+     ]
+    },
+    {
+     "name": "Número de Entradas USB 2.0",
+     "originalName": "Número de Entradas USB 2.0",
+     "values": [
+      "1 Entrada"
+     ]
+    },
+    {
+     "name": "Incluye",
+     "originalName": "Incluye",
+     "values": [
+      "Cable de poder, Control Remoto, Manual del Usuario"
+     ]
+    },
+    {
+     "name": "Medidas de la Pantalla en Diagonal",
+     "originalName": "Medidas de la Pantalla en Diagonal",
+     "values": [
+      "139.7"
+     ]
+    },
+    {
+     "name": "Dimensiones con Base",
+     "originalName": "Dimensiones con Base",
+     "values": [
+      "76 x 122.46 x 19.9"
+     ]
+    },
+    {
+     "name": "Dimensiones sin Base",
+     "originalName": "Dimensiones sin Base",
+     "values": [
+      "70.78 X 122.46 X 7.66"
+     ]
+    },
+    {
+     "name": "Peso con Base",
+     "originalName": "Peso con Base",
+     "values": [
+      "10.3"
+     ]
+    },
+    {
+     "name": "Peso sin Base",
+     "originalName": "Peso sin Base",
+     "values": [
+      "10"
+     ]
+    },
+    {
+     "name": "Pulgadas",
+     "originalName": "Pulgadas",
+     "values": [
+      "55\""
+     ]
+    },
+    {
+     "name": "Rango Tamaño Pantalla",
+     "originalName": "Rango Tamaño Pantalla",
+     "values": [
+      "55\" a 64\""
+     ]
+    },
+    {
+     "name": "Origen",
+     "originalName": "Origen",
+     "values": [
+      "Importado"
+     ]
+    },
+    {
+     "name": "País de Origen",
+     "originalName": "País de Origen",
+     "values": [
+      "México"
+     ]
+    },
+    {
+     "name": "Diseño",
+     "originalName": "Diseño",
+     "values": [
+      "Plano"
+     ]
+    },
+    {
+     "name": "Condición Equipo",
+     "originalName": "Condición Equipo",
+     "values": [
+      "Nuevo"
+     ]
+    },
+    {
+     "name": "Datos Servicio Técnico",
+     "originalName": "Datos Servicio Técnico",
+     "values": [
+      "https://www.samsung.com/co/support/contact/#onlinesupport"
+     ]
+    },
+    {
+     "name": "Garantía Mínima Presunta",
+     "originalName": "Garantía Mínima Presunta",
+     "values": [
+      "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+     ]
+    },
+    {
+     "name": "Garantía Proveedor",
+     "originalName": "Garantía Proveedor",
+     "values": [
+      "12 meses"
+     ]
+    },
+    {
+     "name": "sellerId",
+     "originalName": "sellerId",
+     "values": [
+      "1"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "sellers": [
+      {
+       "sellerId": "1",
+       "sellerName": "Cencosud - Colombia",
+       "addToCartLink": "",
+       "sellerDefault": true,
+       "commertialOffer": {
+        "DeliverySlaSamplesPerRegion": {},
+        "DeliverySlaSamples": [],
+        "AvailableQuantity": 10000,
+        "discountHighlights": [],
+        "Installments": [
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 633300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 316650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 158325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 79163,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 52775,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 633300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 316650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 158325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 79163,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 52775,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 633300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 316650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 158325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 79163,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 52775,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 633300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 316650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 158325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 79163,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 52775,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Vale",
+          "PaymentSystemGroupName": "giftCardPaymentGroup",
+          "Name": "Vale à vista"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Promissory",
+          "PaymentSystemGroupName": "promissoryPaymentGroup",
+          "Name": "Promissory à vista"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Addi",
+          "PaymentSystemGroupName": "AddiPaymentGroup",
+          "Name": "Addi à vista"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "MercadoPagoOff",
+          "PaymentSystemGroupName": "MercadoPagoOffPaymentGroup",
+          "Name": "MercadoPagoOff à vista"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 633300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 316650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 158325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 79163,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 52775,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 316650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 158325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 79163,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 52775,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Visa Débito",
+          "PaymentSystemGroupName": "customPrivate_503PaymentGroup",
+          "Name": "Visa Débito à vista"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Mastercard Débito",
+          "PaymentSystemGroupName": "customPrivate_504PaymentGroup",
+          "Name": "Mastercard Débito à vista"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "PSE",
+          "PaymentSystemGroupName": "PSEPaymentGroup",
+          "Name": "PSE à vista"
+         },
+         {
+          "Value": 1899900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1899900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Bancolombia Button",
+          "PaymentSystemGroupName": "Bancolombia ButtonPaymentGroup",
+          "Name": "Bancolombia Button à vista"
+         }
+        ],
+        "Price": 1899900,
+        "ListPrice": 3849900,
+        "spotPrice": 1899900,
+        "taxPercentage": 0,
+        "PriceWithoutDiscount": 1899900,
+        "Tax": 0,
+        "GiftSkuIds": [],
+        "BuyTogether": [],
+        "ItemMetadataAttachment": [],
+        "RewardValue": 0,
+        "PriceValidUntil": "2027-11-05T00:00:00Z",
+        "GetInfoErrorMessage": null,
+        "CacheVersionUsedToCallCheckout": "",
+        "teasers": [
+         {
+          "name": "T. INT TMC 2.64 ELECTRO SDPC181783",
+          "conditions": {
+           "parameters": [
+            {
+             "name": "RestrictionsBins",
+             "value": "409744,411759,483160,483161,606374,414489"
+            }
+           ],
+           "minimumQuantity": 0
+          },
+          "effects": {
+           "parameters": [
+            {
+             "name": "PercentualDiscount",
+             "value": "2.6399999999999997"
+            }
+           ]
+          },
+          "generalValues": []
+         },
+         {
+          "name": "T. INT COD 2.64 ELECTRO SDPC182158",
+          "conditions": {
+           "parameters": [
+            {
+             "name": "RestrictionsBins",
+             "value": "870055,590712,529448,423629,425819,425949"
+            }
+           ],
+           "minimumQuantity": 0
+          },
+          "effects": {
+           "parameters": [
+            {
+             "name": "PercentualDiscount",
+             "value": "2.6399999999999997"
+            }
+           ]
+          },
+          "generalValues": []
+         }
+        ]
+       }
+      }
+     ],
+     "images": [
+      {
+       "imageId": "960324",
+       "cacheId": "960324",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960324/8806097960843-1.jpg?v=639264678820800000"
+      },
+      {
+       "imageId": "960325",
+       "cacheId": "960325",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960325/8806097960843-2.jpg?v=639264678820970000"
+      },
+      {
+       "imageId": "960326",
+       "cacheId": "960326",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960326/8806097960843-3.jpg?v=639264678821000000"
+      },
+      {
+       "imageId": "960327",
+       "cacheId": "960327",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960327/8806097960843-4.jpg?v=639264678821070000"
+      },
+      {
+       "imageId": "960328",
+       "cacheId": "960328",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960328/8806097960843-5.jpg?v=639264678821100000"
+      },
+      {
+       "imageId": "960329",
+       "cacheId": "960329",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960329/8806097960843-6.jpg?v=639264678821170000"
+      },
+      {
+       "imageId": "960330",
+       "cacheId": "960330",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960330/8806097960843-7.jpg?v=639264678821230000"
+      },
+      {
+       "imageId": "960331",
+       "cacheId": "960331",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960331/8806097960843-8.jpg?v=639264678821300000"
+      }
+     ],
+     "itemId": "433936",
+     "name": "Televisor Samsung 55'' Mini LED Smart TV UN55M75HAKXZL",
+     "nameComplete": "Televisor Samsung 55'' Pulgadas Mini LED Smart TV UN55M75HAKXZL Televisor Samsung 55'' Mini LED Smart TV UN55M75HAKXZL",
+     "complementName": "Televisor Samsung 55'' Mini LED Smart TV UN55M75HAKXZL",
+     "referenceId": [
+      {
+       "Key": "RefId",
+       "Value": "3746501"
+      }
+     ],
+     "measurementUnit": "un",
+     "unitMultiplier": 1,
+     "variations": [],
+     "ean": "8806097960843",
+     "modalType": "",
+     "videos": [],
+     "attachments": [],
+     "isKit": false,
+     "attributes": []
+    }
+   ],
+   "categoriesIds": [
+    "/2000666/2000667/2000670/",
+    "/2000666/2000667/",
+    "/2000666/"
+   ],
+   "releaseDate": 1766966400000,
+   "metaTagDescription": "",
+   "origin": "intelligent-search",
+   "productTitle": ""
+  },
+  {
+   "cacheId": "sp-437056",
+   "productId": "437056",
+   "description": "Pulgadas: 55\", Smart TV: Sí, Resolución: 4K Ultra HD, Tipo de Pantalla: LED, Garantía Proveedor: 1 Año",
+   "productName": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL",
+   "productReference": "3749779",
+   "linkText": "televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779",
+   "brand": "SAMSUNG",
+   "brandId": 14258,
+   "link": "/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p",
+   "categories": [
+    "/Televisores Y Audio/Televisión/Televisores/",
+    "/Televisores Y Audio/Televisión/",
+    "/Televisores Y Audio/"
+   ],
+   "categoryId": "2000670",
+   "priceRange": {
+    "sellingPrice": {
+     "highPrice": 1699900,
+     "lowPrice": 1699900
+    },
+    "listPrice": {
+     "highPrice": 3169900,
+     "lowPrice": 3169900
+    }
+   },
+   "specificationGroups": [
+    {
+     "originalName": "Observaciones y Recomendaciones",
+     "name": "Observaciones y Recomendaciones",
+     "specifications": [
+      {
+       "originalName": "Condición Equipo",
+       "name": "Condición Equipo",
+       "values": [
+        "Nuevo"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Funciones",
+     "name": "Funciones",
+     "specifications": [
+      {
+       "originalName": "Sintonizador Digital",
+       "name": "Sintonizador Digital",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      },
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Resolución Pantalla",
+       "name": "Resolución Pantalla",
+       "values": [
+        "3840 x 2160"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Android TV",
+       "name": "Android TV",
+       "values": [
+        "No"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr Configuraciones",
+     "name": "Gr Configuraciones",
+     "specifications": [
+      {
+       "originalName": "ProductData",
+       "name": "ProductData",
+       "values": [
+        "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Otras Características",
+     "name": "Otras Características",
+     "specifications": [
+      {
+       "originalName": "Origen",
+       "name": "Origen",
+       "values": [
+        "Importado"
+       ]
+      },
+      {
+       "originalName": "País de Origen",
+       "name": "País de Origen",
+       "values": [
+        "México"
+       ]
+      },
+      {
+       "originalName": "Diseño",
+       "name": "Diseño",
+       "values": [
+        "Plano"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Garantía y Líneas de Soporte",
+     "name": "Garantía y Líneas de Soporte",
+     "specifications": [
+      {
+       "originalName": "Datos Servicio Técnico",
+       "name": "Datos Servicio Técnico",
+       "values": [
+        "WhatsApp: 3138698800"
+       ]
+      },
+      {
+       "originalName": "Garantía Mínima Presunta",
+       "name": "Garantía Mínima Presunta",
+       "values": [
+        "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+       ]
+      },
+      {
+       "originalName": "Garantía Proveedor",
+       "name": "Garantía Proveedor",
+       "values": [
+        "1 año de garantía"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Componentes",
+     "name": "Componentes",
+     "specifications": [
+      {
+       "originalName": "Entrada Coaxial",
+       "name": "Entrada Coaxial",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Entradas de Video",
+       "name": "Entradas de Video",
+       "values": [
+        "HDMI y USB"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas HDMI",
+       "name": "Número de Entradas HDMI",
+       "values": [
+        "3 Entradas"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas USB 2.0",
+       "name": "Número de Entradas USB 2.0",
+       "values": [
+        "1 Entrada"
+       ]
+      },
+      {
+       "originalName": "Incluye",
+       "name": "Incluye",
+       "values": [
+        "Incluye control remoto"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Medidas",
+     "name": "Medidas",
+     "specifications": [
+      {
+       "originalName": "Medidas de la Pantalla en Diagonal",
+       "name": "Medidas de la Pantalla en Diagonal",
+       "values": [
+        "140 cm"
+       ]
+      },
+      {
+       "originalName": "Dimensiones con Base",
+       "name": "Dimensiones con Base",
+       "values": [
+        "76 cm x 122.5 cm x 19.9 cm"
+       ]
+      },
+      {
+       "originalName": "Dimensiones sin Base",
+       "name": "Dimensiones sin Base",
+       "values": [
+        "70.8 cm x 122.5 cm x 7.7 cm"
+       ]
+      },
+      {
+       "originalName": "Peso con Base",
+       "name": "Peso con Base",
+       "values": [
+        "10.2 kg"
+       ]
+      },
+      {
+       "originalName": "Peso sin Base",
+       "name": "Peso sin Base",
+       "values": [
+        "9.9 kg"
+       ]
+      },
+      {
+       "originalName": "Pulgadas",
+       "name": "Pulgadas",
+       "values": [
+        "55\""
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Filtros",
+     "name": "Filtros",
+     "specifications": [
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "LED"
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr Especificaciones de Producto",
+     "name": "Gr Especificaciones de Producto",
+     "specifications": [
+      {
+       "originalName": "Vendido por",
+       "name": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Características Destacadas",
+     "name": "Características Destacadas",
+     "specifications": [
+      {
+       "originalName": "Marca",
+       "name": "Marca",
+       "values": [
+        "SAMSUNG"
+       ]
+      },
+      {
+       "originalName": "Tipo de Producto",
+       "name": "Tipo de Producto",
+       "values": [
+        "Smart TV"
+       ]
+      },
+      {
+       "originalName": "Color",
+       "name": "Color",
+       "values": [
+        "Negro"
+       ]
+      },
+      {
+       "originalName": "Modelo",
+       "name": "Modelo",
+       "values": [
+        "Crystal UHD"
+       ]
+      },
+      {
+       "originalName": "EAN",
+       "name": "EAN",
+       "values": [
+        "8806097977766"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "LED"
+       ]
+      },
+      {
+       "originalName": "Conectividad",
+       "name": "Conectividad",
+       "values": [
+        "Wifi+Bluetooth"
+       ]
+      },
+      {
+       "originalName": "Conexión",
+       "name": "Conexión",
+       "values": [
+        "3 HDM, 1 USB, 1 ETHERNET"
+       ]
+      },
+      {
+       "originalName": "Compatibilidad TDT",
+       "name": "Compatibilidad TDT",
+       "values": [
+        "Si"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "allSpecifications",
+     "name": "allSpecifications",
+     "specifications": [
+      {
+       "originalName": "Vendido por",
+       "name": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "originalName": "ProductData",
+       "name": "ProductData",
+       "values": [
+        "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+       ]
+      },
+      {
+       "originalName": "Marca",
+       "name": "Marca",
+       "values": [
+        "SAMSUNG"
+       ]
+      },
+      {
+       "originalName": "Tipo de Producto",
+       "name": "Tipo de Producto",
+       "values": [
+        "Smart TV"
+       ]
+      },
+      {
+       "originalName": "Color",
+       "name": "Color",
+       "values": [
+        "Negro"
+       ]
+      },
+      {
+       "originalName": "Modelo",
+       "name": "Modelo",
+       "values": [
+        "Crystal UHD"
+       ]
+      },
+      {
+       "originalName": "EAN",
+       "name": "EAN",
+       "values": [
+        "8806097977766"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "LED"
+       ]
+      },
+      {
+       "originalName": "Conectividad",
+       "name": "Conectividad",
+       "values": [
+        "Wifi+Bluetooth"
+       ]
+      },
+      {
+       "originalName": "Conexión",
+       "name": "Conexión",
+       "values": [
+        "3 HDM, 1 USB, 1 ETHERNET"
+       ]
+      },
+      {
+       "originalName": "Compatibilidad TDT",
+       "name": "Compatibilidad TDT",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sintonizador Digital",
+       "name": "Sintonizador Digital",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      },
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Resolución Pantalla",
+       "name": "Resolución Pantalla",
+       "values": [
+        "3840 x 2160"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Android TV",
+       "name": "Android TV",
+       "values": [
+        "No"
+       ]
+      },
+      {
+       "originalName": "Entrada Coaxial",
+       "name": "Entrada Coaxial",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Entradas de Video",
+       "name": "Entradas de Video",
+       "values": [
+        "HDMI y USB"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas HDMI",
+       "name": "Número de Entradas HDMI",
+       "values": [
+        "3 Entradas"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas USB 2.0",
+       "name": "Número de Entradas USB 2.0",
+       "values": [
+        "1 Entrada"
+       ]
+      },
+      {
+       "originalName": "Incluye",
+       "name": "Incluye",
+       "values": [
+        "Incluye control remoto"
+       ]
+      },
+      {
+       "originalName": "Medidas de la Pantalla en Diagonal",
+       "name": "Medidas de la Pantalla en Diagonal",
+       "values": [
+        "140 cm"
+       ]
+      },
+      {
+       "originalName": "Dimensiones con Base",
+       "name": "Dimensiones con Base",
+       "values": [
+        "76 cm x 122.5 cm x 19.9 cm"
+       ]
+      },
+      {
+       "originalName": "Dimensiones sin Base",
+       "name": "Dimensiones sin Base",
+       "values": [
+        "70.8 cm x 122.5 cm x 7.7 cm"
+       ]
+      },
+      {
+       "originalName": "Peso con Base",
+       "name": "Peso con Base",
+       "values": [
+        "10.2 kg"
+       ]
+      },
+      {
+       "originalName": "Peso sin Base",
+       "name": "Peso sin Base",
+       "values": [
+        "9.9 kg"
+       ]
+      },
+      {
+       "originalName": "Pulgadas",
+       "name": "Pulgadas",
+       "values": [
+        "55\""
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      },
+      {
+       "originalName": "Origen",
+       "name": "Origen",
+       "values": [
+        "Importado"
+       ]
+      },
+      {
+       "originalName": "País de Origen",
+       "name": "País de Origen",
+       "values": [
+        "México"
+       ]
+      },
+      {
+       "originalName": "Diseño",
+       "name": "Diseño",
+       "values": [
+        "Plano"
+       ]
+      },
+      {
+       "originalName": "Condición Equipo",
+       "name": "Condición Equipo",
+       "values": [
+        "Nuevo"
+       ]
+      },
+      {
+       "originalName": "Datos Servicio Técnico",
+       "name": "Datos Servicio Técnico",
+       "values": [
+        "WhatsApp: 3138698800"
+       ]
+      },
+      {
+       "originalName": "Garantía Mínima Presunta",
+       "name": "Garantía Mínima Presunta",
+       "values": [
+        "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+       ]
+      },
+      {
+       "originalName": "Garantía Proveedor",
+       "name": "Garantía Proveedor",
+       "values": [
+        "1 año de garantía"
+       ]
+      },
+      {
+       "originalName": "sellerId",
+       "name": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ]
+    }
+   ],
+   "skuSpecifications": [],
+   "productClusters": [
+    {
+     "id": "137",
+     "name": "all"
+    },
+    {
+     "id": "31412",
+     "name": "publitas-bloque-3"
+    },
+    {
+     "id": "45147",
+     "name": "J.ELECTRO CUPON  JUMBO8 80000 SDPC-175667 DY"
+    },
+    {
+     "id": "45148",
+     "name": "J.P INT CUPON ELECTRODTO 100000 SDPC-175681 DY"
+    },
+    {
+     "id": "45537",
+     "name": "JUMBO CUPON ELECTRO 80.000 26-08-18"
+    },
+    {
+     "id": "45610",
+     "name": "CUPON  80 MIL  26-08-20"
+    },
+    {
+     "id": "45611",
+     "name": "CUPON 100MIL 26-08-20"
+    },
+    {
+     "id": "45937",
+     "name": "Bono 80.000 Ecommerce 26-09-3"
+    },
+    {
+     "id": "46132",
+     "name": "Smart Tv SAMSUNG UN55U8000FKXZL 26-09-15"
+    },
+    {
+     "id": "46180",
+     "name": "Smart Tv QLED CAIXUN C75VHUGQ 26-09-16"
+    },
+    {
+     "id": "46191",
+     "name": "Colección marron 26-09-16"
+    },
+    {
+     "id": "46242",
+     "name": "Tv UN55U8000HKXZL/CAIXUN C43KAFZQ 26-09-17"
+    },
+    {
+     "id": "46277",
+     "name": "Tv HISENSE 65QD5SV/SAMSUNG UN75U8500HKXZL 26-09-18"
+    },
+    {
+     "id": "46393",
+     "name": "LAVADORAS NEVERAS Y TELEVISION 26-09-23"
+    },
+    {
+     "id": "46396",
+     "name": "Smart Tv HISENSE 55QD5ESV+Barra HS1000 26-09-23"
+    },
+    {
+     "id": "46397",
+     "name": "Tv LG 50NU855BPSA/ MABE rma31 26-09-23"
+    },
+    {
+     "id": "46430",
+     "name": "CAIXUN C50KAUGQ/SAMSUNG UN55U8000HKXZL 26-09-23"
+    },
+    {
+     "id": "46466",
+     "name": "HISENSE 55QD5ESV/CAIXUN C43KAFZQ 26-09-24"
+    },
+    {
+     "id": "46468",
+     "name": "SAMSUNG UN70U8000HKXZL/LG 65NU850BPSA 26-09-23"
+    },
+    {
+     "id": "46523",
+     "name": "ANIVERSARIO CARRUSEL 26-09-28"
+    },
+    {
+     "id": "46583",
+     "name": "CUPONES DE HASTA $500.000 26-10-1"
+    },
+    {
+     "id": "46620",
+     "name": "LG 55QNED74BSA/HISENSE 65QD5SV barra 26-10-1"
+    },
+    {
+     "id": "46632",
+     "name": "TELEVISORES, BARRAS Y PARLANTES DE SONIDO 26-10-1"
+    },
+    {
+     "id": "46673",
+     "name": "Tv LG 50NU855BPSA/CAIXUN C43KAFZQ BARRA 26-10-6"
+    },
+    {
+     "id": "46694",
+     "name": "TV SAMSUNG UN70U8000HKXZL/ LG 55QNED74BSA 26-10-7"
+    },
+    {
+     "id": "46698",
+     "name": "Torre de sonido xboom LG RNC9 23 26-10-7"
+    },
+    {
+     "id": "46717",
+     "name": "Nevera MABE 470lt  rmp470zcu  26-10-7"
+    },
+    {
+     "id": "46719",
+     "name": "Portatiles ACER AL16-54P-7167/HP 14-HY0030 26-10-7"
+    },
+    {
+     "id": "46725",
+     "name": "Port LENOVO 15IRH10 touch ci5h 26-10-7"
+    },
+    {
+     "id": "46727",
+     "name": "Smart Tv Led 55 SAMSUNG UN55U8000FKXZL 26-10-7"
+    },
+    {
+     "id": "46747",
+     "name": "CODENSA EN ELECTRO Y TECNOLOGIA  26-10-7"
+    },
+    {
+     "id": "46754",
+     "name": "LG 50NU855BPSA/HISENSE 75A6NV HS1000 26-10-8"
+    },
+    {
+     "id": "46756",
+     "name": "NINTENDO switch 2 /switch 2+mario kart 26-10-8"
+    },
+    {
+     "id": "46760",
+     "name": "Portátil LENOVO 15AMN8 rz5-7520 8gb 512gb 26-10-8"
+    },
+    {
+     "id": "46761",
+     "name": "Consola NINTENDO switch2+juego pok 26-10-8"
+    },
+    {
+     "id": "46766",
+     "name": "TV CAIXUN C43KAFZQ/AWEI KA51/LG65NU850BPSA 26-10-8"
+    },
+    {
+     "id": "46768",
+     "name": "Smart Tv Led HD 32 CHALLENGER 32KG90 26-10-8"
+    },
+    {
+     "id": "46771",
+     "name": "Consola NINTENDO switch 2: elige tu juego 26-10-8"
+    },
+    {
+     "id": "46774",
+     "name": "Tablet LENOVO/ Port ASUS 14 E1404FA-EB1395 26-10-8"
+    },
+    {
+     "id": "46807",
+     "name": "CUPON DE ELECTRO $120 TMC $100 26-10-9"
+    },
+    {
+     "id": "46808",
+     "name": "Port ASUS15 E1504FA-BQ4315W/LENOVO 15IPH11 26-10-9"
+    },
+    {
+     "id": "46883",
+     "name": "Smart Tv Led FHD 43 CHALLENGER 43KG90 26-10-14"
+    },
+    {
+     "id": "46931",
+     "name": "Tvs LG  55QNED74BSA/CAIXUN C75VHUGQ 26-10-15"
+    },
+    {
+     "id": "47095",
+     "name": "HISENSE 55QD5ESVHS1000/C43KAFZQBARRA AWEI 26-10-19"
+    },
+    {
+     "id": "47155",
+     "name": "Smart Tv UHD 4K 65 CAIXUN C65KAUG 26-10-21"
+    },
+    {
+     "id": "47289",
+     "name": "HASTA 50% TMC EN TELEVISORES SAMSUNG 26-10-28"
+    },
+    {
+     "id": "47325",
+     "name": "CARRUSEL TELEVISORES 26-10-28"
+    },
+    {
+     "id": "47360",
+     "name": "Tv SAMSUNG UN70U8000HKXZL/CAIXUN C43KAFZQ 26-10-29"
+    },
+    {
+     "id": "47363",
+     "name": "TV SAMSUNG UN55U8000FKXZL/CAIXUN C75VHUGQ 26-10-28"
+    },
+    {
+     "id": "47389",
+     "name": "Smart Tv QLED 4K 50 CAIXUN C50VAUGQ 26-10-29"
+    },
+    {
+     "id": "47400",
+     "name": "ELECTRO Y TECNOLOGIA 26-10-30"
+    },
+    {
+     "id": "47433",
+     "name": "TEL BARRA Y TORRES DE SONIDO SAMSUNG 26-11-4"
+    },
+    {
+     "id": "47441",
+     "name": "TV CAIXUN C43KAFZQ/LG 55QNED74BSA.AW  26-11-4"
+    },
+    {
+     "id": "47494",
+     "name": "TV SAMSUNG UN70U8000HKXZLCAIXUN C55KAUZQ 26-11-5/"
+    },
+    {
+     "id": "47522",
+     "name": "TV SAMSUNG UN55M75HAKXZL 26-11-9"
+    },
+    {
+     "id": "47533",
+     "name": "LG, CAIXUN Y SAMSUNG 26-11-10"
+    },
+    {
+     "id": "47580",
+     "name": "COLECCION MARRON 26-11-11"
+    },
+    {
+     "id": "47582",
+     "name": "ELECTRODOMESTICOS Y TELEVISORES 26-11-11"
+    }
+   ],
+   "clusterHighlights": [],
+   "properties": [
+    {
+     "name": "Vendido por",
+     "originalName": "Vendido por",
+     "values": [
+      "Jumbo"
+     ]
+    },
+    {
+     "name": "ProductData",
+     "originalName": "ProductData",
+     "values": [
+      "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+     ]
+    },
+    {
+     "name": "Marca",
+     "originalName": "Marca",
+     "values": [
+      "SAMSUNG"
+     ]
+    },
+    {
+     "name": "Tipo de Producto",
+     "originalName": "Tipo de Producto",
+     "values": [
+      "Smart TV"
+     ]
+    },
+    {
+     "name": "Color",
+     "originalName": "Color",
+     "values": [
+      "Negro"
+     ]
+    },
+    {
+     "name": "Modelo",
+     "originalName": "Modelo",
+     "values": [
+      "Crystal UHD"
+     ]
+    },
+    {
+     "name": "EAN",
+     "originalName": "EAN",
+     "values": [
+      "8806097977766"
+     ]
+    },
+    {
+     "name": "Tipo de Pantalla",
+     "originalName": "Tipo de Pantalla",
+     "values": [
+      "LED"
+     ]
+    },
+    {
+     "name": "Conectividad",
+     "originalName": "Conectividad",
+     "values": [
+      "Wifi+Bluetooth"
+     ]
+    },
+    {
+     "name": "Conexión",
+     "originalName": "Conexión",
+     "values": [
+      "3 HDM, 1 USB, 1 ETHERNET"
+     ]
+    },
+    {
+     "name": "Compatibilidad TDT",
+     "originalName": "Compatibilidad TDT",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Sintonizador Digital",
+     "originalName": "Sintonizador Digital",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Sistema Operativo",
+     "originalName": "Sistema Operativo",
+     "values": [
+      "Tizen OS"
+     ]
+    },
+    {
+     "name": "Resolución",
+     "originalName": "Resolución",
+     "values": [
+      "4K Ultra HD"
+     ]
+    },
+    {
+     "name": "Resolución Pantalla",
+     "originalName": "Resolución Pantalla",
+     "values": [
+      "3840 x 2160"
+     ]
+    },
+    {
+     "name": "Smart TV",
+     "originalName": "Smart TV",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Android TV",
+     "originalName": "Android TV",
+     "values": [
+      "No"
+     ]
+    },
+    {
+     "name": "Entrada Coaxial",
+     "originalName": "Entrada Coaxial",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Entradas de Video",
+     "originalName": "Entradas de Video",
+     "values": [
+      "HDMI y USB"
+     ]
+    },
+    {
+     "name": "Número de Entradas HDMI",
+     "originalName": "Número de Entradas HDMI",
+     "values": [
+      "3 Entradas"
+     ]
+    },
+    {
+     "name": "Número de Entradas USB 2.0",
+     "originalName": "Número de Entradas USB 2.0",
+     "values": [
+      "1 Entrada"
+     ]
+    },
+    {
+     "name": "Incluye",
+     "originalName": "Incluye",
+     "values": [
+      "Incluye control remoto"
+     ]
+    },
+    {
+     "name": "Medidas de la Pantalla en Diagonal",
+     "originalName": "Medidas de la Pantalla en Diagonal",
+     "values": [
+      "140 cm"
+     ]
+    },
+    {
+     "name": "Dimensiones con Base",
+     "originalName": "Dimensiones con Base",
+     "values": [
+      "76 cm x 122.5 cm x 19.9 cm"
+     ]
+    },
+    {
+     "name": "Dimensiones sin Base",
+     "originalName": "Dimensiones sin Base",
+     "values": [
+      "70.8 cm x 122.5 cm x 7.7 cm"
+     ]
+    },
+    {
+     "name": "Peso con Base",
+     "originalName": "Peso con Base",
+     "values": [
+      "10.2 kg"
+     ]
+    },
+    {
+     "name": "Peso sin Base",
+     "originalName": "Peso sin Base",
+     "values": [
+      "9.9 kg"
+     ]
+    },
+    {
+     "name": "Pulgadas",
+     "originalName": "Pulgadas",
+     "values": [
+      "55\""
+     ]
+    },
+    {
+     "name": "Rango Tamaño Pantalla",
+     "originalName": "Rango Tamaño Pantalla",
+     "values": [
+      "55\" a 64\""
+     ]
+    },
+    {
+     "name": "Origen",
+     "originalName": "Origen",
+     "values": [
+      "Importado"
+     ]
+    },
+    {
+     "name": "País de Origen",
+     "originalName": "País de Origen",
+     "values": [
+      "México"
+     ]
+    },
+    {
+     "name": "Diseño",
+     "originalName": "Diseño",
+     "values": [
+      "Plano"
+     ]
+    },
+    {
+     "name": "Condición Equipo",
+     "originalName": "Condición Equipo",
+     "values": [
+      "Nuevo"
+     ]
+    },
+    {
+     "name": "Datos Servicio Técnico",
+     "originalName": "Datos Servicio Técnico",
+     "values": [
+      "WhatsApp: 3138698800"
+     ]
+    },
+    {
+     "name": "Garantía Mínima Presunta",
+     "originalName": "Garantía Mínima Presunta",
+     "values": [
+      "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+     ]
+    },
+    {
+     "name": "Garantía Proveedor",
+     "originalName": "Garantía Proveedor",
+     "values": [
+      "1 año de garantía"
+     ]
+    },
+    {
+     "name": "sellerId",
+     "originalName": "sellerId",
+     "values": [
+      "1"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "sellers": [
+      {
+       "sellerId": "1",
+       "sellerName": "Cencosud - Colombia",
+       "addToCartLink": "",
+       "sellerDefault": true,
+       "commertialOffer": {
+        "DeliverySlaSamplesPerRegion": {},
+        "DeliverySlaSamples": [],
+        "AvailableQuantity": 10000,
+        "discountHighlights": [],
+        "Installments": [
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 566634,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 283317,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 141659,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 70830,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 47220,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 566634,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 283317,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 141659,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 70830,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 47220,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 566634,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 283317,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 141659,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 70830,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 47220,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 566634,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 283317,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 141659,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 70830,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 47220,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Vale",
+          "PaymentSystemGroupName": "giftCardPaymentGroup",
+          "Name": "Vale à vista"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Promissory",
+          "PaymentSystemGroupName": "promissoryPaymentGroup",
+          "Name": "Promissory à vista"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Addi",
+          "PaymentSystemGroupName": "AddiPaymentGroup",
+          "Name": "Addi à vista"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "MercadoPagoOff",
+          "PaymentSystemGroupName": "MercadoPagoOffPaymentGroup",
+          "Name": "MercadoPagoOff à vista"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 566634,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 283317,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 141659,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 70830,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 47220,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 283317,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 141659,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 70830,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 47220,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Visa Débito",
+          "PaymentSystemGroupName": "customPrivate_503PaymentGroup",
+          "Name": "Visa Débito à vista"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Mastercard Débito",
+          "PaymentSystemGroupName": "customPrivate_504PaymentGroup",
+          "Name": "Mastercard Débito à vista"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "PSE",
+          "PaymentSystemGroupName": "PSEPaymentGroup",
+          "Name": "PSE à vista"
+         },
+         {
+          "Value": 1699900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 1699900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Bancolombia Button",
+          "PaymentSystemGroupName": "Bancolombia ButtonPaymentGroup",
+          "Name": "Bancolombia Button à vista"
+         }
+        ],
+        "Price": 1699900,
+        "ListPrice": 3169900,
+        "spotPrice": 1699900,
+        "taxPercentage": 0,
+        "PriceWithoutDiscount": 1699900,
+        "Tax": 0,
+        "GiftSkuIds": [],
+        "BuyTogether": [],
+        "ItemMetadataAttachment": [],
+        "RewardValue": 0,
+        "PriceValidUntil": "2027-11-05T00:00:00Z",
+        "GetInfoErrorMessage": null,
+        "CacheVersionUsedToCallCheckout": "",
+        "teasers": [
+         {
+          "name": "J. INT TMC 8.83 TMCSAMSUNG SDPC181783",
+          "conditions": {
+           "parameters": [
+            {
+             "name": "RestrictionsBins",
+             "value": "409744,411759,483160,483161,606374,414489"
+            }
+           ],
+           "minimumQuantity": 0
+          },
+          "effects": {
+           "parameters": [
+            {
+             "name": "PercentualDiscount",
+             "value": "8.83"
+            }
+           ]
+          },
+          "generalValues": []
+         },
+         {
+          "name": "J. INT COD 8.83 CODENSA SDPC182158",
+          "conditions": {
+           "parameters": [
+            {
+             "name": "RestrictionsBins",
+             "value": "870055,590712,529448,423629,425819,425949"
+            }
+           ],
+           "minimumQuantity": 0
+          },
+          "effects": {
+           "parameters": [
+            {
+             "name": "PercentualDiscount",
+             "value": "8.83"
+            }
+           ]
+          },
+          "generalValues": []
+         }
+        ]
+       }
+      }
+     ],
+     "images": [
+      {
+       "imageId": "960356",
+       "cacheId": "960356",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960356/8806097977766-1.jpg?v=639264683766870000"
+      },
+      {
+       "imageId": "960357",
+       "cacheId": "960357",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960357/8806097977766-2.jpg?v=639264683767000000"
+      },
+      {
+       "imageId": "960358",
+       "cacheId": "960358",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960358/8806097977766-3.jpg?v=639264683767070000"
+      },
+      {
+       "imageId": "960359",
+       "cacheId": "960359",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960359/8806097977766-4.jpg?v=639264683767100000"
+      },
+      {
+       "imageId": "960360",
+       "cacheId": "960360",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960360/8806097977766-5.jpg?v=639264683767130000"
+      },
+      {
+       "imageId": "960361",
+       "cacheId": "960361",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960361/8806097977766-6.jpg?v=639264683767170000"
+      },
+      {
+       "imageId": "960362",
+       "cacheId": "960362",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960362/8806097977766-7.jpg?v=639264683767230000"
+      },
+      {
+       "imageId": "960363",
+       "cacheId": "960363",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/960363/8806097977766-8.jpg?v=639264683767270000"
+      }
+     ],
+     "itemId": "437056",
+     "name": "Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
+     "nameComplete": "Televisor Samsung 55'' Pulgadas LED UHD 4K Smart TV UN55U8000HKXZL Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
+     "complementName": "Televisor Samsung 55'' LED UHD 4K Smart TV UN55U8000HKXZL",
+     "referenceId": [
+      {
+       "Key": "RefId",
+       "Value": "3749779"
+      }
+     ],
+     "measurementUnit": "un",
+     "unitMultiplier": 1,
+     "variations": [],
+     "ean": "8806097977766",
+     "modalType": "",
+     "videos": [],
+     "attachments": [],
+     "isKit": false,
+     "attributes": []
+    }
+   ],
+   "categoriesIds": [
+    "/2000666/2000667/2000670/",
+    "/2000666/2000667/",
+    "/2000666/"
+   ],
+   "releaseDate": 1766966400000,
+   "metaTagDescription": "",
+   "origin": "intelligent-search",
+   "productTitle": ""
+  },
+  {
+   "cacheId": "sp-433943",
+   "productId": "433943",
+   "description": "Pulgadas: 55, Smart TV: Si, Resolución: 4K, Tipo de Pantalla: OLED, Conectividad: Wifi",
+   "productName": "Televisor Samsung 55'' Pulgadas OLED Smart TV QN55S85HAEXZL",
+   "productReference": "3746509",
+   "linkText": "televisor-samsung-55-pulgadas-oled-smart-tv-qn55s85haexzl-3746509",
+   "brand": "SAMSUNG",
+   "brandId": 14258,
+   "link": "/televisor-samsung-55-pulgadas-oled-smart-tv-qn55s85haexzl-3746509/p",
+   "categories": [
+    "/Televisores Y Audio/Televisión/Televisores/",
+    "/Televisores Y Audio/Televisión/",
+    "/Televisores Y Audio/"
+   ],
+   "categoryId": "2000670",
+   "priceRange": {
+    "sellingPrice": {
+     "highPrice": 3999900,
+     "lowPrice": 3999900
+    },
+    "listPrice": {
+     "highPrice": 6999900,
+     "lowPrice": 6999900
+    }
+   },
+   "specificationGroups": [
+    {
+     "originalName": "Otras Características",
+     "name": "Otras Características",
+     "specifications": [
+      {
+       "originalName": "Origen",
+       "name": "Origen",
+       "values": [
+        "Importado"
+       ]
+      },
+      {
+       "originalName": "País de Origen",
+       "name": "País de Origen",
+       "values": [
+        "México"
+       ]
+      },
+      {
+       "originalName": "Diseño",
+       "name": "Diseño",
+       "values": [
+        "Plano"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr Configuraciones",
+     "name": "Gr Configuraciones",
+     "specifications": [
+      {
+       "originalName": "ProductData",
+       "name": "ProductData",
+       "values": [
+        "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Características Destacadas",
+     "name": "Características Destacadas",
+     "specifications": [
+      {
+       "originalName": "Marca",
+       "name": "Marca",
+       "values": [
+        "SAMSUNG"
+       ]
+      },
+      {
+       "originalName": "Tipo de Producto",
+       "name": "Tipo de Producto",
+       "values": [
+        "Smart TV"
+       ]
+      },
+      {
+       "originalName": "Color",
+       "name": "Color",
+       "values": [
+        "Negro"
+       ]
+      },
+      {
+       "originalName": "Modelo",
+       "name": "Modelo",
+       "values": [
+        "2026"
+       ]
+      },
+      {
+       "originalName": "EAN",
+       "name": "EAN",
+       "values": [
+        "8806097966135"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "OLED"
+       ]
+      },
+      {
+       "originalName": "Conectividad",
+       "name": "Conectividad",
+       "values": [
+        "Wifi"
+       ]
+      },
+      {
+       "originalName": "Conexión",
+       "name": "Conexión",
+       "values": [
+        "HDMI,Anynet,LAN,USB"
+       ]
+      },
+      {
+       "originalName": "Compatibilidad TDT",
+       "name": "Compatibilidad TDT",
+       "values": [
+        "Si"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Observaciones y Recomendaciones",
+     "name": "Observaciones y Recomendaciones",
+     "specifications": [
+      {
+       "originalName": "Condición Equipo",
+       "name": "Condición Equipo",
+       "values": [
+        "Nuevo"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Filtros",
+     "name": "Filtros",
+     "specifications": [
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "OLED"
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Medidas",
+     "name": "Medidas",
+     "specifications": [
+      {
+       "originalName": "Medidas de la Pantalla en Diagonal",
+       "name": "Medidas de la Pantalla en Diagonal",
+       "values": [
+        "139.7"
+       ]
+      },
+      {
+       "originalName": "Dimensiones con Base",
+       "name": "Dimensiones con Base",
+       "values": [
+        "76.44 X 122.57 X 23.53"
+       ]
+      },
+      {
+       "originalName": "Dimensiones sin Base",
+       "name": "Dimensiones sin Base",
+       "values": [
+        "70.56 X 122.57 X 3.39"
+       ]
+      },
+      {
+       "originalName": "Peso con Base",
+       "name": "Peso con Base",
+       "values": [
+        "13.4"
+       ]
+      },
+      {
+       "originalName": "Peso sin Base",
+       "name": "Peso sin Base",
+       "values": [
+        "13"
+       ]
+      },
+      {
+       "originalName": "Pulgadas",
+       "name": "Pulgadas",
+       "values": [
+        "55"
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Funciones",
+     "name": "Funciones",
+     "specifications": [
+      {
+       "originalName": "Sintonizador Digital",
+       "name": "Sintonizador Digital",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      },
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Resolución Pantalla",
+       "name": "Resolución Pantalla",
+       "values": [
+        "3840 x 2160"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Componentes",
+     "name": "Componentes",
+     "specifications": [
+      {
+       "originalName": "Entrada Coaxial",
+       "name": "Entrada Coaxial",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas HDMI",
+       "name": "Número de Entradas HDMI",
+       "values": [
+        "4 Entradas"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas USB 2.0",
+       "name": "Número de Entradas USB 2.0",
+       "values": [
+        "1 Entrada"
+       ]
+      },
+      {
+       "originalName": "Incluye",
+       "name": "Incluye",
+       "values": [
+        "Cable de poder, Control Remoto, Manual del Usuario"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Garantía y Líneas de Soporte",
+     "name": "Garantía y Líneas de Soporte",
+     "specifications": [
+      {
+       "originalName": "Datos Servicio Técnico",
+       "name": "Datos Servicio Técnico",
+       "values": [
+        "https://www.samsung.com/co/support/contact/#onlinesupport"
+       ]
+      },
+      {
+       "originalName": "Garantía Mínima Presunta",
+       "name": "Garantía Mínima Presunta",
+       "values": [
+        "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+       ]
+      },
+      {
+       "originalName": "Garantía Proveedor",
+       "name": "Garantía Proveedor",
+       "values": [
+        "12 meses"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr Especificaciones de Producto",
+     "name": "Gr Especificaciones de Producto",
+     "specifications": [
+      {
+       "originalName": "Vendido por",
+       "name": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "Gr ESPECIFICACIONES TÉCNICAS",
+     "name": "Gr ESPECIFICACIONES TÉCNICAS",
+     "specifications": [
+      {
+       "originalName": "Cupones con Descuento",
+       "name": "Cupones con Descuento",
+       "values": [
+        "''"
+       ]
+      }
+     ]
+    },
+    {
+     "originalName": "allSpecifications",
+     "name": "allSpecifications",
+     "specifications": [
+      {
+       "originalName": "Cupones con Descuento",
+       "name": "Cupones con Descuento",
+       "values": [
+        "''"
+       ]
+      },
+      {
+       "originalName": "Vendido por",
+       "name": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "originalName": "ProductData",
+       "name": "ProductData",
+       "values": [
+        "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+       ]
+      },
+      {
+       "originalName": "Marca",
+       "name": "Marca",
+       "values": [
+        "SAMSUNG"
+       ]
+      },
+      {
+       "originalName": "Tipo de Producto",
+       "name": "Tipo de Producto",
+       "values": [
+        "Smart TV"
+       ]
+      },
+      {
+       "originalName": "Color",
+       "name": "Color",
+       "values": [
+        "Negro"
+       ]
+      },
+      {
+       "originalName": "Modelo",
+       "name": "Modelo",
+       "values": [
+        "2026"
+       ]
+      },
+      {
+       "originalName": "EAN",
+       "name": "EAN",
+       "values": [
+        "8806097966135"
+       ]
+      },
+      {
+       "originalName": "Tipo de Pantalla",
+       "name": "Tipo de Pantalla",
+       "values": [
+        "OLED"
+       ]
+      },
+      {
+       "originalName": "Conectividad",
+       "name": "Conectividad",
+       "values": [
+        "Wifi"
+       ]
+      },
+      {
+       "originalName": "Conexión",
+       "name": "Conexión",
+       "values": [
+        "HDMI,Anynet,LAN,USB"
+       ]
+      },
+      {
+       "originalName": "Compatibilidad TDT",
+       "name": "Compatibilidad TDT",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sintonizador Digital",
+       "name": "Sintonizador Digital",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Sistema Operativo",
+       "name": "Sistema Operativo",
+       "values": [
+        "Tizen OS"
+       ]
+      },
+      {
+       "originalName": "Resolución",
+       "name": "Resolución",
+       "values": [
+        "4K Ultra HD"
+       ]
+      },
+      {
+       "originalName": "Resolución Pantalla",
+       "name": "Resolución Pantalla",
+       "values": [
+        "3840 x 2160"
+       ]
+      },
+      {
+       "originalName": "Smart TV",
+       "name": "Smart TV",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Entrada Coaxial",
+       "name": "Entrada Coaxial",
+       "values": [
+        "Si"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas HDMI",
+       "name": "Número de Entradas HDMI",
+       "values": [
+        "4 Entradas"
+       ]
+      },
+      {
+       "originalName": "Número de Entradas USB 2.0",
+       "name": "Número de Entradas USB 2.0",
+       "values": [
+        "1 Entrada"
+       ]
+      },
+      {
+       "originalName": "Incluye",
+       "name": "Incluye",
+       "values": [
+        "Cable de poder, Control Remoto, Manual del Usuario"
+       ]
+      },
+      {
+       "originalName": "Medidas de la Pantalla en Diagonal",
+       "name": "Medidas de la Pantalla en Diagonal",
+       "values": [
+        "139.7"
+       ]
+      },
+      {
+       "originalName": "Dimensiones con Base",
+       "name": "Dimensiones con Base",
+       "values": [
+        "76.44 X 122.57 X 23.53"
+       ]
+      },
+      {
+       "originalName": "Dimensiones sin Base",
+       "name": "Dimensiones sin Base",
+       "values": [
+        "70.56 X 122.57 X 3.39"
+       ]
+      },
+      {
+       "originalName": "Peso con Base",
+       "name": "Peso con Base",
+       "values": [
+        "13.4"
+       ]
+      },
+      {
+       "originalName": "Peso sin Base",
+       "name": "Peso sin Base",
+       "values": [
+        "13"
+       ]
+      },
+      {
+       "originalName": "Pulgadas",
+       "name": "Pulgadas",
+       "values": [
+        "55"
+       ]
+      },
+      {
+       "originalName": "Rango Tamaño Pantalla",
+       "name": "Rango Tamaño Pantalla",
+       "values": [
+        "55\" a 64\""
+       ]
+      },
+      {
+       "originalName": "Origen",
+       "name": "Origen",
+       "values": [
+        "Importado"
+       ]
+      },
+      {
+       "originalName": "País de Origen",
+       "name": "País de Origen",
+       "values": [
+        "México"
+       ]
+      },
+      {
+       "originalName": "Diseño",
+       "name": "Diseño",
+       "values": [
+        "Plano"
+       ]
+      },
+      {
+       "originalName": "Condición Equipo",
+       "name": "Condición Equipo",
+       "values": [
+        "Nuevo"
+       ]
+      },
+      {
+       "originalName": "Datos Servicio Técnico",
+       "name": "Datos Servicio Técnico",
+       "values": [
+        "https://www.samsung.com/co/support/contact/#onlinesupport"
+       ]
+      },
+      {
+       "originalName": "Garantía Mínima Presunta",
+       "name": "Garantía Mínima Presunta",
+       "values": [
+        "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+       ]
+      },
+      {
+       "originalName": "Garantía Proveedor",
+       "name": "Garantía Proveedor",
+       "values": [
+        "12 meses"
+       ]
+      },
+      {
+       "originalName": "sellerId",
+       "name": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ]
+    }
+   ],
+   "skuSpecifications": [],
+   "productClusters": [
+    {
+     "id": "137",
+     "name": "all"
+    },
+    {
+     "id": "31412",
+     "name": "publitas-bloque-3"
+    },
+    {
+     "id": "45147",
+     "name": "J.ELECTRO CUPON  JUMBO8 80000 SDPC-175667 DY"
+    },
+    {
+     "id": "45148",
+     "name": "J.P INT CUPON ELECTRODTO 100000 SDPC-175681 DY"
+    },
+    {
+     "id": "45537",
+     "name": "JUMBO CUPON ELECTRO 80.000 26-08-18"
+    },
+    {
+     "id": "45610",
+     "name": "CUPON  80 MIL  26-08-20"
+    },
+    {
+     "id": "45611",
+     "name": "CUPON 100MIL 26-08-20"
+    },
+    {
+     "id": "45937",
+     "name": "Bono 80.000 Ecommerce 26-09-3"
+    },
+    {
+     "id": "46807",
+     "name": "CUPON DE ELECTRO $120 TMC $100 26-10-9"
+    },
+    {
+     "id": "47289",
+     "name": "HASTA 50% TMC EN TELEVISORES SAMSUNG 26-10-28"
+    },
+    {
+     "id": "47325",
+     "name": "CARRUSEL TELEVISORES 26-10-28"
+    },
+    {
+     "id": "47360",
+     "name": "Tv SAMSUNG UN70U8000HKXZL/CAIXUN C43KAFZQ 26-10-29"
+    },
+    {
+     "id": "47363",
+     "name": "TV SAMSUNG UN55U8000FKXZL/CAIXUN C75VHUGQ 26-10-28"
+    },
+    {
+     "id": "47389",
+     "name": "Smart Tv QLED 4K 50 CAIXUN C50VAUGQ 26-10-29"
+    },
+    {
+     "id": "47433",
+     "name": "TEL BARRA Y TORRES DE SONIDO SAMSUNG 26-11-4"
+    },
+    {
+     "id": "47533",
+     "name": "LG, CAIXUN Y SAMSUNG 26-11-10"
+    }
+   ],
+   "clusterHighlights": [],
+   "properties": [
+    {
+     "name": "Cupones con Descuento",
+     "originalName": "Cupones con Descuento",
+     "values": [
+      "''"
+     ]
+    },
+    {
+     "name": "Vendido por",
+     "originalName": "Vendido por",
+     "values": [
+      "Jumbo"
+     ]
+    },
+    {
+     "name": "ProductData",
+     "originalName": "ProductData",
+     "values": [
+      "{\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"SAMSUNG\",\"brandEcomId\":\"14258\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_selector\":false}"
+     ]
+    },
+    {
+     "name": "Marca",
+     "originalName": "Marca",
+     "values": [
+      "SAMSUNG"
+     ]
+    },
+    {
+     "name": "Tipo de Producto",
+     "originalName": "Tipo de Producto",
+     "values": [
+      "Smart TV"
+     ]
+    },
+    {
+     "name": "Color",
+     "originalName": "Color",
+     "values": [
+      "Negro"
+     ]
+    },
+    {
+     "name": "Modelo",
+     "originalName": "Modelo",
+     "values": [
+      "2026"
+     ]
+    },
+    {
+     "name": "EAN",
+     "originalName": "EAN",
+     "values": [
+      "8806097966135"
+     ]
+    },
+    {
+     "name": "Tipo de Pantalla",
+     "originalName": "Tipo de Pantalla",
+     "values": [
+      "OLED"
+     ]
+    },
+    {
+     "name": "Conectividad",
+     "originalName": "Conectividad",
+     "values": [
+      "Wifi"
+     ]
+    },
+    {
+     "name": "Conexión",
+     "originalName": "Conexión",
+     "values": [
+      "HDMI,Anynet,LAN,USB"
+     ]
+    },
+    {
+     "name": "Compatibilidad TDT",
+     "originalName": "Compatibilidad TDT",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Sintonizador Digital",
+     "originalName": "Sintonizador Digital",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Sistema Operativo",
+     "originalName": "Sistema Operativo",
+     "values": [
+      "Tizen OS"
+     ]
+    },
+    {
+     "name": "Resolución",
+     "originalName": "Resolución",
+     "values": [
+      "4K Ultra HD"
+     ]
+    },
+    {
+     "name": "Resolución Pantalla",
+     "originalName": "Resolución Pantalla",
+     "values": [
+      "3840 x 2160"
+     ]
+    },
+    {
+     "name": "Smart TV",
+     "originalName": "Smart TV",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Entrada Coaxial",
+     "originalName": "Entrada Coaxial",
+     "values": [
+      "Si"
+     ]
+    },
+    {
+     "name": "Número de Entradas HDMI",
+     "originalName": "Número de Entradas HDMI",
+     "values": [
+      "4 Entradas"
+     ]
+    },
+    {
+     "name": "Número de Entradas USB 2.0",
+     "originalName": "Número de Entradas USB 2.0",
+     "values": [
+      "1 Entrada"
+     ]
+    },
+    {
+     "name": "Incluye",
+     "originalName": "Incluye",
+     "values": [
+      "Cable de poder, Control Remoto, Manual del Usuario"
+     ]
+    },
+    {
+     "name": "Medidas de la Pantalla en Diagonal",
+     "originalName": "Medidas de la Pantalla en Diagonal",
+     "values": [
+      "139.7"
+     ]
+    },
+    {
+     "name": "Dimensiones con Base",
+     "originalName": "Dimensiones con Base",
+     "values": [
+      "76.44 X 122.57 X 23.53"
+     ]
+    },
+    {
+     "name": "Dimensiones sin Base",
+     "originalName": "Dimensiones sin Base",
+     "values": [
+      "70.56 X 122.57 X 3.39"
+     ]
+    },
+    {
+     "name": "Peso con Base",
+     "originalName": "Peso con Base",
+     "values": [
+      "13.4"
+     ]
+    },
+    {
+     "name": "Peso sin Base",
+     "originalName": "Peso sin Base",
+     "values": [
+      "13"
+     ]
+    },
+    {
+     "name": "Pulgadas",
+     "originalName": "Pulgadas",
+     "values": [
+      "55"
+     ]
+    },
+    {
+     "name": "Rango Tamaño Pantalla",
+     "originalName": "Rango Tamaño Pantalla",
+     "values": [
+      "55\" a 64\""
+     ]
+    },
+    {
+     "name": "Origen",
+     "originalName": "Origen",
+     "values": [
+      "Importado"
+     ]
+    },
+    {
+     "name": "País de Origen",
+     "originalName": "País de Origen",
+     "values": [
+      "México"
+     ]
+    },
+    {
+     "name": "Diseño",
+     "originalName": "Diseño",
+     "values": [
+      "Plano"
+     ]
+    },
+    {
+     "name": "Condición Equipo",
+     "originalName": "Condición Equipo",
+     "values": [
+      "Nuevo"
+     ]
+    },
+    {
+     "name": "Datos Servicio Técnico",
+     "originalName": "Datos Servicio Técnico",
+     "values": [
+      "https://www.samsung.com/co/support/contact/#onlinesupport"
+     ]
+    },
+    {
+     "name": "Garantía Mínima Presunta",
+     "originalName": "Garantía Mínima Presunta",
+     "values": [
+      "Otros productos, por doce (12) meses contados a partir de la fecha de su entrega al comprador original"
+     ]
+    },
+    {
+     "name": "Garantía Proveedor",
+     "originalName": "Garantía Proveedor",
+     "values": [
+      "12 meses"
+     ]
+    },
+    {
+     "name": "sellerId",
+     "originalName": "sellerId",
+     "values": [
+      "1"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "sellers": [
+      {
+       "sellerId": "1",
+       "sellerName": "Cencosud - Colombia",
+       "addToCartLink": "",
+       "sellerDefault": true,
+       "commertialOffer": {
+        "DeliverySlaSamplesPerRegion": {},
+        "DeliverySlaSamples": [],
+        "AvailableQuantity": 10000,
+        "discountHighlights": [],
+        "Installments": [
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 1333300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 666650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 333325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 166663,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 111109,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "American Express",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "American Express"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 1333300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 666650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 333325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 166663,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 111109,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Visa",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Visa"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 1333300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 666650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 333325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 166663,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 111109,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Diners",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Diners"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 1333300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 666650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 333325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 166663,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 111109,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Mastercard",
+          "PaymentSystemGroupName": "creditCardPaymentGroup",
+          "Name": "Mastercard"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Vale",
+          "PaymentSystemGroupName": "giftCardPaymentGroup",
+          "Name": "Vale à vista"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Promissory",
+          "PaymentSystemGroupName": "promissoryPaymentGroup",
+          "Name": "Promissory à vista"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Addi",
+          "PaymentSystemGroupName": "AddiPaymentGroup",
+          "Name": "Addi à vista"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "MercadoPagoOff",
+          "PaymentSystemGroupName": "MercadoPagoOffPaymentGroup",
+          "Name": "MercadoPagoOff à vista"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 1333300,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 3,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 666650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 333325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 166663,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 111109,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Tarjeta Cencosud",
+          "PaymentSystemGroupName": "customPrivate_501PaymentGroup",
+          "Name": "Tarjeta Cencosud"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 666650,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 6,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 333325,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 12,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 166663,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 24,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 111109,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 36,
+          "PaymentSystemName": "Codensa",
+          "PaymentSystemGroupName": "customPrivate_502PaymentGroup",
+          "Name": "Codensa"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Visa Débito",
+          "PaymentSystemGroupName": "customPrivate_503PaymentGroup",
+          "Name": "Visa Débito à vista"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Mastercard Débito",
+          "PaymentSystemGroupName": "customPrivate_504PaymentGroup",
+          "Name": "Mastercard Débito à vista"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "PSE",
+          "PaymentSystemGroupName": "PSEPaymentGroup",
+          "Name": "PSE à vista"
+         },
+         {
+          "Value": 3999900,
+          "InterestRate": 0,
+          "TotalValuePlusInterestRate": 3999900,
+          "NumberOfInstallments": 1,
+          "PaymentSystemName": "Bancolombia Button",
+          "PaymentSystemGroupName": "Bancolombia ButtonPaymentGroup",
+          "Name": "Bancolombia Button à vista"
+         }
+        ],
+        "Price": 3999900,
+        "ListPrice": 6999900,
+        "spotPrice": 3999900,
+        "taxPercentage": 0,
+        "PriceWithoutDiscount": 3999900,
+        "Tax": 0,
+        "GiftSkuIds": [],
+        "BuyTogether": [],
+        "ItemMetadataAttachment": [],
+        "RewardValue": 0,
+        "PriceValidUntil": "2027-11-05T00:00:00Z",
+        "GetInfoErrorMessage": null,
+        "CacheVersionUsedToCallCheckout": "",
+        "teasers": [
+         {
+          "name": "T. INT TMC 3.01 ELECTRO SDPC181783 1",
+          "conditions": {
+           "parameters": [
+            {
+             "name": "RestrictionsBins",
+             "value": "409744,411759,483160,483161,606374,414489"
+            }
+           ],
+           "minimumQuantity": 0
+          },
+          "effects": {
+           "parameters": [
+            {
+             "name": "PercentualDiscount",
+             "value": "3.01"
+            }
+           ]
+          },
+          "generalValues": []
+         },
+         {
+          "name": "T. INT COD 3.01 ELECTRO SDPC182158",
+          "conditions": {
+           "parameters": [
+            {
+             "name": "RestrictionsBins",
+             "value": "870055,590712,529448,423629,425819,425949"
+            }
+           ],
+           "minimumQuantity": 0
+          },
+          "effects": {
+           "parameters": [
+            {
+             "name": "PercentualDiscount",
+             "value": "3.01"
+            }
+           ]
+          },
+          "generalValues": []
+         }
+        ]
+       }
+      }
+     ],
+     "images": [
+      {
+       "imageId": "975675",
+       "cacheId": "975675",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975675/8806097966135-1.jpg?v=639298455832630000"
+      },
+      {
+       "imageId": "975676",
+       "cacheId": "975676",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975676/8806097966135-2.jpg?v=639298455832670000"
+      },
+      {
+       "imageId": "975677",
+       "cacheId": "975677",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975677/8806097966135-3.jpg?v=639298455832700000"
+      },
+      {
+       "imageId": "975678",
+       "cacheId": "975678",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975678/8806097966135-4.jpg?v=639298455832770000"
+      },
+      {
+       "imageId": "975679",
+       "cacheId": "975679",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975679/8806097966135-5.jpg?v=639298455832800000"
+      },
+      {
+       "imageId": "975680",
+       "cacheId": "975680",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975680/8806097966135-6.jpg?v=639298455832830000"
+      },
+      {
+       "imageId": "975681",
+       "cacheId": "975681",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975681/8806097966135-7.jpg?v=639298455832870000"
+      },
+      {
+       "imageId": "975682",
+       "cacheId": "975682",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/975682/8806097966135-8.jpg?v=639298455832930000"
+      }
+     ],
+     "itemId": "433943",
+     "name": "Televisor Samsung 55'' OLED Smart TV QN55S85HAEXZL",
+     "nameComplete": "Televisor Samsung 55'' Pulgadas OLED Smart TV QN55S85HAEXZL Televisor Samsung 55'' OLED Smart TV QN55S85HAEXZL",
+     "complementName": "Televisor Samsung 55'' OLED Smart TV QN55S85HAEXZL",
+     "referenceId": [
+      {
+       "Key": "RefId",
+       "Value": "3746509"
+      }
+     ],
+     "measurementUnit": "un",
+     "unitMultiplier": 1,
+     "variations": [],
+     "ean": "8806097966135",
+     "modalType": "",
+     "videos": [],
+     "attachments": [],
+     "isKit": false,
+     "attributes": []
+    }
+   ],
+   "categoriesIds": [
+    "/2000666/2000667/2000670/",
+    "/2000666/2000667/",
+    "/2000666/"
+   ],
+   "releaseDate": 1766966400000,
+   "metaTagDescription": "",
+   "origin": "intelligent-search",
+   "productTitle": ""
+  }
+ ],
+ "recordsFiltered": 3
+}

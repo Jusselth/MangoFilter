@@ -1,0 +1,298 @@
+{
+ "items": [
+  {
+   "id": "433936",
+   "requestIndex": 0,
+   "quantity": 1,
+   "seller": "1",
+   "sellerChain": [
+    "1"
+   ],
+   "tax": 0,
+   "priceValidUntil": "2027-11-05T00:00:00Z",
+   "price": 189990000,
+   "listPrice": 384990000,
+   "rewardValue": 0,
+   "sellingPrice": 189990000,
+   "offerings": [],
+   "priceTags": [
+    {
+     "name": "discount@shipping-912f14ed-01f7-4749-b806-7f11e5134825#cb4293d9-b038-4b9f-bf01-eec512116134",
+     "value": -1486600,
+     "rawValue": -14866,
+     "isPercentual": false,
+     "identifier": null,
+     "owner": "jumbocolombiaio",
+     "sourceSystem": null
+    }
+   ],
+   "measurementUnit": "un",
+   "unitMultiplier": 1,
+   "parentItemIndex": null,
+   "parentAssemblyBinding": null,
+   "availability": "available",
+   "catalogProvider": "vrn:vtex.catalog-api-proxy:-:jumbocolombiaio:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/433936",
+   "priceDefinition": {
+    "calculatedSellingPrice": 189990000,
+    "total": 189990000,
+    "sellingPrices": [
+     {
+      "value": 189990000,
+      "quantity": 1
+     }
+    ],
+    "reason": "priceTable",
+    "pricePerUnit": 189990000
+   },
+   "priceTable": null
+  },
+  {
+   "id": "437056",
+   "requestIndex": 1,
+   "quantity": 1,
+   "seller": "1",
+   "sellerChain": [
+    "1"
+   ],
+   "tax": 0,
+   "priceValidUntil": "2027-11-05T00:00:00Z",
+   "price": 169990000,
+   "listPrice": 316990000,
+   "rewardValue": 0,
+   "sellingPrice": 169990000,
+   "offerings": [],
+   "priceTags": [
+    {
+     "name": "discount@shipping-912f14ed-01f7-4749-b806-7f11e5134825#cb4293d9-b038-4b9f-bf01-eec512116134",
+     "value": -1471500,
+     "rawValue": -14715,
+     "isPercentual": false,
+     "identifier": null,
+     "owner": "jumbocolombiaio",
+     "sourceSystem": null
+    }
+   ],
+   "measurementUnit": "un",
+   "unitMultiplier": 1,
+   "parentItemIndex": null,
+   "parentAssemblyBinding": null,
+   "availability": "available",
+   "catalogProvider": "vrn:vtex.catalog-api-proxy:-:jumbocolombiaio:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/437056",
+   "priceDefinition": {
+    "calculatedSellingPrice": 169990000,
+    "total": 169990000,
+    "sellingPrices": [
+     {
+      "value": 169990000,
+      "quantity": 1
+     }
+    ],
+    "reason": "priceTable",
+    "pricePerUnit": 169990000
+   },
+   "priceTable": null
+  },
+  {
+   "id": "433943",
+   "requestIndex": 2,
+   "quantity": 1,
+   "seller": "1",
+   "sellerChain": [
+    "1"
+   ],
+   "tax": 0,
+   "priceValidUntil": "2027-11-05T00:00:00Z",
+   "price": 399990000,
+   "listPrice": 699990000,
+   "rewardValue": 0,
+   "sellingPrice": 399990000,
+   "offerings": [],
+   "priceTags": [
+    {
+     "name": "discount@shipping-912f14ed-01f7-4749-b806-7f11e5134825#cb4293d9-b038-4b9f-bf01-eec512116134",
+     "value": -1932300,
+     "rawValue": -19323,
+     "isPercentual": false,
+     "identifier": null,
+     "owner": "jumbocolombiaio",
+     "sourceSystem": null
+    }
+   ],
+   "measurementUnit": "un",
+   "unitMultiplier": 1,
+   "parentItemIndex": null,
+   "parentAssemblyBinding": null,
+   "availability": "available",
+   "catalogProvider": "vrn:vtex.catalog-api-proxy:-:jumbocolombiaio:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/433943",
+   "priceDefinition": {
+    "calculatedSellingPrice": 399990000,
+    "total": 399990000,
+    "sellingPrices": [
+     {
+      "value": 399990000,
+      "quantity": 1
+     }
+    ],
+    "reason": "priceTable",
+    "pricePerUnit": 399990000
+   },
+   "priceTable": null
+  }
+ ],
+ "logisticsInfo": [
+  {
+   "itemIndex": 0,
+   "addressId": null,
+   "selectedSla": null,
+   "selectedDeliveryChannel": null,
+   "quantity": 1,
+   "shipsTo": [
+    "COL"
+   ],
+   "slas": [
+    {
+     "id": "Normal",
+     "deliveryChannel": "delivery",
+     "name": "Normal",
+     "deliveryIds": [
+      {
+       "courierId": "900559843-7-Bog",
+       "warehouseId": "205",
+       "dockId": "205",
+       "courierName": "Bogota LIFTIT Paqueteo",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "1bd",
+     "shippingEstimateDate": "2026-11-12T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 1486600,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": false,
+      "friendlyName": null,
+      "address": null,
+      "additionalInfo": null,
+      "dockId": null
+     },
+     "pickupPointId": null,
+     "pickupDistance": 0,
+     "polygonName": "",
+     "transitTime": "0bd"
+    }
+   ],
+   "deliveryChannels": [
+    {
+     "id": "delivery"
+    }
+   ]
+  },
+  {
+   "itemIndex": 1,
+   "addressId": null,
+   "selectedSla": null,
+   "selectedDeliveryChannel": null,
+   "quantity": 1,
+   "shipsTo": [
+    "COL"
+   ],
+   "slas": [
+    {
+     "id": "Normal",
+     "deliveryChannel": "delivery",
+     "name": "Normal",
+     "deliveryIds": [
+      {
+       "courierId": "900559843-7-Bog",
+       "warehouseId": "205",
+       "dockId": "205",
+       "courierName": "Bogota LIFTIT Paqueteo",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "1bd",
+     "shippingEstimateDate": "2026-11-12T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 1471500,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": false,
+      "friendlyName": null,
+      "address": null,
+      "additionalInfo": null,
+      "dockId": null
+     },
+     "pickupPointId": null,
+     "pickupDistance": 0,
+     "polygonName": "",
+     "transitTime": "0bd"
+    }
+   ],
+   "deliveryChannels": [
+    {
+     "id": "delivery"
+    }
+   ]
+  },
+  {
+   "itemIndex": 2,
+   "addressId": null,
+   "selectedSla": null,
+   "selectedDeliveryChannel": null,
+   "quantity": 1,
+   "shipsTo": [
+    "COL"
+   ],
+   "slas": [
+    {
+     "id": "Normal",
+     "deliveryChannel": "delivery",
+     "name": "Normal",
+     "deliveryIds": [
+      {
+       "courierId": "900559843-7-Bog",
+       "warehouseId": "205",
+       "dockId": "205",
+       "courierName": "Bogota LIFTIT Paqueteo",
+       "quantity": 1,
+       "kitItemDetails": []
+      }
+     ],
+     "shippingEstimate": "1bd",
+     "shippingEstimateDate": "2026-11-12T17:14:00-05:00",
+     "lockTTL": null,
+     "availableDeliveryWindows": [],
+     "deliveryWindow": null,
+     "price": 0,
+     "listPrice": 1932300,
+     "tax": 0,
+     "pickupStoreInfo": {
+      "isPickupStore": false,
+      "friendlyName": null,
+      "address": null,
+      "additionalInfo": null,
+      "dockId": null
+     },
+     "pickupPointId": null,
+     "pickupDistance": 0,
+     "polygonName": "",
+     "transitTime": "0bd"
+    }
+   ],
+   "deliveryChannels": [
+    {
+     "id": "delivery"
+    }
+   ]
+  }
+ ],
+ "messages": []
+}
