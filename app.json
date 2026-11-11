@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "MangoFilter",
+    "slug": "mangofilter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "co.edu.unisabana.mangofilter"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFB443",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "co.edu.unisabana.mangofilter"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFF9F1",
+          "dark": {
+            "backgroundColor": "#16100A"
+          }
+        }
+      ]
+    ],
+    "scheme": "mangofilter",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
