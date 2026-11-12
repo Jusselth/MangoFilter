@@ -107,6 +107,7 @@ export function createMercadoLibreAdapter(clientId: string, clientSecret: string
             shippingCost: ship.cost,
             deliveryDays: ship.days,
             shippingKnown: ship.known,
+            availability: ship.known ? 'delivery' : 'unknown',
             totalCost: Math.round(r.price) + (ship.cost ?? 0),
             position,
             notes: ship.known ? [] : ['No pudimos cotizar el envío: se calcula en la tienda.'],

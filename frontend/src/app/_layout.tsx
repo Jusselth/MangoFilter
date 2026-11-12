@@ -14,6 +14,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { persistor, store } from '../store';
+import { bootstrapSession } from '../store/accountSync';
 import { ThemeProvider, useTheme } from '../theme/ThemeContext';
 import { fonts } from '../theme/palette';
 
@@ -32,7 +33,14 @@ export default function RootLayout() {
 
   return (
     <Provider store={store}>
-      <PersistGate persistor={persistor} onBeforeLift={() => SplashScreen.hideAsync()}>
+      <PersistGate
+        persistor={persistor}
+        onBeforeLift={async () => {
+          // Primero se rehidratan los datos del dispositivo; luego se restaura la sesión de la cuenta.
+          await bootstrapSession(store.dispatch);
+          await SplashScreen.hideAsync();
+        }}
+      >
         <ThemeProvider>
           <RootStack />
         </ThemeProvider>
@@ -66,6 +74,8 @@ function RootStack() {
         <Stack.Screen name="product/[id]" options={{ title: '' }} />
         <Stack.Screen name="filters" options={{ presentation: 'modal', title: 'Filtros' }} />
         <Stack.Screen name="city" options={{ presentation: 'modal', title: 'Ciudad de entrega' }} />
+        <Stack.Screen name="login" options={{ presentation: 'modal', title: 'Tu cuenta' }} />
+        <Stack.Screen name="privacy" options={{ title: 'Aviso de privacidad' }} />
       </Stack>
     </>
   );

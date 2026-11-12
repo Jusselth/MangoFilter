@@ -1,5 +1,7 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
+import { accountLoaded, signedOut } from './sessionSlice';
+
 const MAX_HISTORY = 8;
 
 interface HistoryState {
@@ -23,6 +25,14 @@ const historySlice = createSlice({
     clearHistory(state) {
       state.queries = [];
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(accountLoaded, (state, action) => {
+      state.queries = action.payload.history.slice(0, MAX_HISTORY);
+    });
+    builder.addCase(signedOut, (state) => {
+      state.queries = [];
+    });
   },
 });
 

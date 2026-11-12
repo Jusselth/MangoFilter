@@ -2,21 +2,29 @@ import { Ionicons } from '@expo/vector-icons';
 import { memo } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import type { RankedGroup } from '../domain/ranking';
+import { isDeliverable, type RankedGroup } from '../domain/ranking';
+import { useAppSelector } from '../store';
 import { useTheme } from '../theme/ThemeContext';
-import { formatCOP, formatDays, plural, spokenCOP } from '../utils/format';
+import { availabilityLabel, formatCOP, formatDays, plural, spokenCOP } from '../utils/format';
 import { ProductImage } from './ProductImage';
 import { AppText, PressableCard, StoreBadge, Tag } from './ui';
 
 /** Tarjeta de resultado: un producto (agrupado entre tiendas) con su mejor oferta según el criterio. */
 export const ProductCard = memo(function ProductCard({ group, onPress }: { group: RankedGroup; onPress: () => void }) {
   const { colors } = useTheme();
+  const cityName = useAppSelector((s) => s.preferences.cityName);
   const { best } = group;
   const storeCount = group.offers.length;
+  // Si ni la mejor oferta llega, ninguna llega (las que no llegan siempre van al final).
+  const noneArrive = !isDeliverable(best);
+  const bestWarning = availabilityLabel(best, cityName);
 
   const a11y = [
     group.name,
-    `Mejor opción ${spokenCOP(best.totalCost)}${best.shippingKnown ? ' con envío' : ', envío por confirmar'} en ${best.store.name}`,
+    noneArrive
+      ? `Atención: ${bestWarning}. Precio ${spokenCOP(best.totalCost)} en ${best.store.name}`
+      : `Mejor opción ${spokenCOP(best.totalCost)}${best.shippingKnown ? ' con envío' : ', envío por confirmar'} en ${best.store.name}`,
+    group.undeliverable > 0 && !noneArrive ? `${plural(group.undeliverable, 'tienda no lo despacha', 'tiendas no lo despachan')} a ${cityName}` : '',
     formatDays(best.deliveryDays),
     storeCount > 1 ? `comparado en ${plural(storeCount, 'tienda', 'tiendas')}` : 'disponible en 1 tienda',
     group.savings > 0 ? `ahorras hasta ${spokenCOP(group.savings)}` : '',
@@ -40,15 +48,15 @@ export const ProductCard = memo(function ProductCard({ group, onPress }: { group
       <View style={styles.bottom}>
         <View style={{ flex: 1, gap: 2 }}>
           <AppText variant="caption" tone="muted">
-            {best.shippingKnown ? 'Total con envío' : 'Precio (envío por confirmar)'}
+            {best.shippingKnown ? 'Total con envío' : noneArrive ? 'Precio (sin envío a tu ciudad)' : 'Precio (envío por confirmar)'}
           </AppText>
-          <AppText variant="price" tone="brand">
+          <AppText variant="price" tone={noneArrive ? 'muted' : 'brand'}>
             {formatCOP(best.totalCost)}
           </AppText>
           <View style={styles.storeLine}>
             <StoreBadge store={best.store} size={20} />
             <AppText variant="caption" style={{ flexShrink: 1 }}>
-              {best.store.name} · {formatDays(best.deliveryDays)}
+              {best.store.name} · {noneArrive ? 'Sin entrega a domicilio' : formatDays(best.deliveryDays)}
             </AppText>
           </View>
         </View>
@@ -56,6 +64,11 @@ export const ProductCard = memo(function ProductCard({ group, onPress }: { group
       </View>
 
       <View style={styles.meta}>
+        {noneArrive && bestWarning ? (
+          <Tag icon="alert-circle-outline" tone="danger" label={storeCount > 1 ? `Ninguna tienda lo despacha a ${cityName}` : bestWarning} />
+        ) : group.undeliverable > 0 ? (
+          <Tag icon="alert-circle-outline" tone="danger" label={`${plural(group.undeliverable, 'tienda no lo despacha', 'tiendas no lo despachan')} a ${cityName}`} />
+        ) : null}
         {storeCount > 1 ? (
           <Tag icon="git-compare-outline" label={`Comparado en ${plural(storeCount, 'tienda', 'tiendas')}`} />
         ) : (

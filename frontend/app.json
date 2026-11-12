@@ -39,7 +39,8 @@
           }
         }
       ],
-      "expo-image"
+      "expo-image",
+      "expo-secure-store"
     ],
     "scheme": "mangofilter",
     "experiments": {

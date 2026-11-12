@@ -21,6 +21,7 @@ function offer(storeId: string, title: string, price: number, brand?: string): O
     shippingCost: 0,
     deliveryDays: 2,
     shippingKnown: true,
+    availability: 'delivery',
     totalCost: price,
     position: 0,
     notes: [],

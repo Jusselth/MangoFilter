@@ -19,6 +19,9 @@ const filtersSlice = createSlice({
     setFreeShippingOnly(state, action: PayloadAction<boolean>) {
       state.freeShippingOnly = action.payload;
     },
+    setHideUndeliverable(state, action: PayloadAction<boolean>) {
+      state.hideUndeliverable = action.payload;
+    },
     toggleStore(state, action: PayloadAction<string>) {
       const i = state.stores.indexOf(action.payload);
       if (i >= 0) state.stores.splice(i, 1);
@@ -30,5 +33,5 @@ const filtersSlice = createSlice({
   },
 });
 
-export const { setMaxBudget, setMaxDeliveryDays, setFreeShippingOnly, toggleStore, resetFilters } = filtersSlice.actions;
+export const { setMaxBudget, setMaxDeliveryDays, setFreeShippingOnly, setHideUndeliverable, toggleStore, resetFilters } = filtersSlice.actions;
 export default filtersSlice.reducer;

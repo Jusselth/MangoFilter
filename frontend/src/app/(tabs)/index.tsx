@@ -4,6 +4,7 @@ import { router } from 'expo-router';
 import { Linking, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { RecommendedSection, TopStoresSection, TrendingSection } from '../../components/HomeInsights';
 import { SearchBar } from '../../components/SearchBar';
 import { AppText, Chip, SectionTitle, Skeleton, StoreBadge, TextButton } from '../../components/ui';
 import { useAppDispatch, useAppSelector } from '../../store';
@@ -11,7 +12,7 @@ import { describeApiError, useGetStoresQuery } from '../../store/api';
 import { addQuery, clearHistory } from '../../store/slices/historySlice';
 import { useTheme } from '../../theme/ThemeContext';
 
-/** Ideas de búsqueda (solo texto de ayuda; los resultados siempre vienen de las tiendas). */
+/** Ideas de búsqueda (solo texto de ayuda, cuando aún no hay tendencias reales; los resultados siempre vienen de las tiendas). */
 const IDEAS = ['freidora de aire', 'televisor samsung', 'audífonos sony', 'licuadora oster', 'portátil lenovo', 'nevera'];
 
 export default function HomeScreen() {
@@ -84,14 +85,23 @@ export default function HomeScreen() {
           </View>
         ) : null}
 
-        <View style={{ gap: spacing.sm }}>
-          <SectionTitle title="Prueba con" />
-          <View style={styles.wrap}>
-            {IDEAS.map((q) => (
-              <Chip key={q} label={q} icon="sparkles-outline" onPress={() => search(q)} accessibilityLabel={`Buscar ${q}`} />
-            ))}
-          </View>
-        </View>
+        <RecommendedSection />
+
+        <TrendingSection
+          onSearch={search}
+          fallback={
+            <View style={{ gap: spacing.sm }}>
+              <SectionTitle title="Prueba con" />
+              <View style={styles.wrap}>
+                {IDEAS.map((q) => (
+                  <Chip key={q} label={q} icon="sparkles-outline" onPress={() => search(q)} accessibilityLabel={`Buscar ${q}`} />
+                ))}
+              </View>
+            </View>
+          }
+        />
+
+        <TopStoresSection />
 
         <View style={{ gap: spacing.md }}>
           <SectionTitle title="Comparamos en" />

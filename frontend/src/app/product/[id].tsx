@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { OfferCard } from '../../components/OfferCard';
 import { ProductImage } from '../../components/ProductImage';
 import { AppText, Card, EmptyState, GradientButton, IconButton, SegmentedControl, Skeleton, Tag } from '../../components/ui';
-import { CRITERIA, rankGroup } from '../../domain/ranking';
+import { CRITERIA, isDeliverable, rankGroup } from '../../domain/ranking';
 import { useHaptics } from '../../hooks/useHaptics';
 import { useAppDispatch, useAppSelector } from '../../store';
 import { describeApiError, useSearchProductsQuery } from '../../store/api';
@@ -64,6 +64,7 @@ export default function ProductScreen() {
   }
 
   const best = group.best;
+  const bestReachable = isDeliverable(best);
   const known = group.offers.filter((o) => o.shippingKnown);
   const cheapest = known.length ? Math.min(...known.map((o) => o.totalCost)) : null;
   const fastestDays = known.map((o) => o.deliveryDays).filter((d): d is number => d !== null);
@@ -88,7 +89,7 @@ export default function ProductScreen() {
           <ProductImage uri={group.imageUrl} size={96} label={group.name} />
           <View style={{ flex: 1, gap: 4 }}>
             <AppText variant="label" tone="muted">
-              {group.offers.length > 1 ? `Comparado en ${plural(group.offers.length, 'tienda', 'tiendas')}` : 'Disponible en 1 tienda'}
+              {group.offers.length > 1 ? `Comparado en ${plural(group.offers.length, 'tienda', 'tiendas')}` : bestReachable ? 'Disponible en 1 tienda' : 'En 1 tienda'}
             </AppText>
             <AppText variant="heading" accessibilityRole="header">
               {group.name}
@@ -101,10 +102,27 @@ export default function ProductScreen() {
             Resumen para {data.city.name} · consultado {timeAgo(data.fetchedAt)}
           </AppText>
           <View style={styles.summaryRow}>
-            <Stat label="Mejor opción" value={formatCOP(best.totalCost)} hint={best.store.name} highlight />
+            {bestReachable ? (
+              <Stat label="Mejor opción" value={formatCOP(best.totalCost)} hint={best.store.name} highlight />
+            ) : (
+              <Stat label="Mejor opción" value="—" hint="Ninguna llega" />
+            )}
             <Stat label="Más barato" value={cheapest !== null ? formatCOP(cheapest) : '—'} />
             <Stat label="Más rápido" value={fastest === null ? '—' : fastest <= 1 ? '1 día' : `${fastest} días`} />
           </View>
+          {group.undeliverable > 0 ? (
+            <Tag
+              icon="alert-circle-outline"
+              tone="danger"
+              label={
+                group.undeliverable === group.offers.length
+                  ? group.offers.length === 1
+                    ? `La tienda no lo despacha a ${data.city.name}`
+                    : `Ninguna tienda lo despacha a ${data.city.name}`
+                  : `${plural(group.undeliverable, 'tienda no lo despacha', 'tiendas no lo despachan')} a ${data.city.name} (marcadas abajo)`
+              }
+            />
+          ) : null}
           {group.savings > 0 ? (
             <Tag icon="trending-down" tone="leaf" label={`Ahorras hasta ${formatCOP(group.savings)} frente a la opción más cara`} />
           ) : null}
@@ -128,7 +146,7 @@ export default function ProductScreen() {
         ) : null}
 
         {group.offers.map((offer, index) => (
-          <OfferCard key={offer.id} offer={offer} rank={index} bestTotal={best.totalCost} />
+          <OfferCard key={offer.id} offer={offer} rank={index} bestTotal={best.totalCost} query={q} />
         ))}
 
         <AppText variant="caption" tone="muted" style={{ textAlign: 'center', marginTop: spacing.sm }}>

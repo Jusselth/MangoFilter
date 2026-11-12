@@ -1,5 +1,7 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
+import { accountLoaded, signedOut } from './sessionSlice';
+
 /** Producto guardado con una "foto" del precio para detectar variaciones. */
 export interface SavedProduct {
   /** ID del grupo (ID_Interno de una de sus ofertas, p. ej. "jumbo:433936"). */
@@ -30,6 +32,15 @@ const savedSlice = createSlice({
     removeSaved(state, action: PayloadAction<string>) {
       state.items = state.items.filter((p) => p.id !== action.payload);
     },
+  },
+  extraReducers: (builder) => {
+    // Con cuenta, el servidor es la fuente de verdad; al salir, sus datos no se quedan en el dispositivo.
+    builder.addCase(accountLoaded, (state, action) => {
+      state.items = action.payload.saved;
+    });
+    builder.addCase(signedOut, (state) => {
+      state.items = [];
+    });
   },
 });
 

@@ -24,6 +24,15 @@ export interface City {
   postal: string;
 }
 
+/**
+ * Disponibilidad de la oferta para la ciudad consultada (según la simulación de la tienda):
+ *  - delivery:    la tienda despacha a domicilio a la ciudad (envío cotizado).
+ *  - pickup:      no despacha a domicilio; solo se puede recoger en una tienda física de la ciudad.
+ *  - no_delivery: la tienda no despacha este producto a la ciudad.
+ *  - unknown:     no se pudo cotizar (la simulación falló); se confirma en la tienda.
+ */
+export type Availability = 'delivery' | 'pickup' | 'no_delivery' | 'unknown';
+
 /** Oferta normalizada: una publicación de un producto en una tienda. */
 export interface Offer {
   /** ID_Interno: `${storeId}:${skuId}` */
@@ -49,6 +58,8 @@ export interface Offer {
   deliveryDays: number | null;
   /** true si el envío viene de la tienda (cotización real para la ciudad). */
   shippingKnown: boolean;
+  /** Si la oferta llega o no a la ciudad. Solo `delivery` (o `unknown`) puede ser la "mejor opción". */
+  availability: Availability;
   /** Costo Total = Precio Base + Costo Envío (ecuación 1). Si el envío es desconocido, solo el precio. */
   totalCost: number;
   /** Posición en los resultados de la tienda (0 = más relevante). */
@@ -67,9 +78,9 @@ export interface ProductGroup {
 export interface StoreStatus {
   store: StoreRef;
   status: 'ok' | 'timeout' | 'error';
-  /** Ofertas útiles devueltas (con despacho a la ciudad). */
+  /** Ofertas devueltas (incluye las marcadas como `pickup` o `no_delivery`). */
   count: number;
-  /** Productos encontrados que la tienda no despacha a la ciudad. */
+  /** Cuántas de esas ofertas NO llegan a domicilio a la ciudad (`pickup` + `no_delivery`). */
   notShippable: number;
   latencyMs: number;
   fromCache: boolean;
@@ -84,4 +95,80 @@ export interface SearchResponse {
   tookMs: number;
   /** ISO 8601: momento en que se consultaron las tiendas. */
   fetchedAt: string;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Cuentas, estadísticas y recomendaciones.                                   */
+/* Copia de backend/src/auth/service.ts (User), backend/src/userData.ts,      */
+/* backend/src/routes/activity.ts y backend/src/recommendations.ts.           */
+/* ------------------------------------------------------------------------- */
+
+export interface AccountUser {
+  id: string;
+  email: string;
+  createdAt: string;
+}
+
+export interface AccountPreferences {
+  city: string;
+  cityName: string;
+  criterion: 'precio' | 'equilibrado' | 'rapidez';
+  themeMode: 'system' | 'light' | 'dark';
+  haptics: boolean;
+}
+
+export interface AccountSavedProduct {
+  id: string;
+  name: string;
+  imageUrl: string | null;
+  query: string;
+  bestTotalAtSave: number;
+  /** Epoch en milisegundos. */
+  savedAt: number;
+}
+
+/** GET /api/me y POST /api/me/sync */
+export interface AccountData {
+  user: AccountUser;
+  preferences: AccountPreferences | null;
+  saved: AccountSavedProduct[];
+  /** Búsquedas recientes (más reciente primero). */
+  history: string[];
+}
+
+export interface VerifyResponse {
+  token: string;
+  user: AccountUser;
+  isNew: boolean;
+}
+
+export interface HealthResponse {
+  ok: boolean;
+  stores: string[];
+  features: { accounts: boolean };
+  time: string;
+}
+
+export interface TopStoresResponse {
+  days: number;
+  totalViews: number;
+  stores: { store: StoreRef; views: number; people: number }[];
+}
+
+export interface TrendingResponse {
+  city: City;
+  days: number;
+  minPeople: number;
+  queries: { query: string; people: number; searches: number }[];
+}
+
+export interface Recommendation {
+  query: string;
+  reason: string;
+  group: ProductGroup;
+}
+
+export interface RecommendationsResponse {
+  city: City;
+  items: Recommendation[];
 }

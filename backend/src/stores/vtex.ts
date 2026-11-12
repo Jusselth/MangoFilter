@@ -14,7 +14,7 @@
  */
 import { TtlCache } from '../cache.js';
 import { detectBrand, matchesQuery, normalizeBrand, normalizeTitle } from '../domain/normalize.js';
-import type { City, Offer, StoreRef } from '../domain/types.js';
+import type { Availability, City, Offer, StoreRef } from '../domain/types.js';
 import { fetchJson } from '../http.js';
 import type { StoreAdapter, StoreSearchResult } from './types.js';
 
@@ -190,28 +190,44 @@ export function createVtexAdapter(config: VtexStoreConfig, deps: VtexDeps = {}):
         let shippingCost: number | null = null;
         let deliveryDays: number | null = null;
         let shippingKnown = false;
+        let availability: Availability = 'unknown';
         const notes: string[] = [];
 
         if (sim) {
           const simItem = sim.items?.find((i) => i.requestIndex === index);
-          const slas = (sim.logisticsInfo?.find((l) => l.itemIndex === index)?.slas ?? []).filter(
-            (s) => s.deliveryChannel === 'delivery',
-          );
-          if (!simItem || simItem.sellingPrice <= 0 || slas.length === 0) {
-            notShippable++;
-            return; // La tienda no despacha este producto a la ciudad.
-          }
+          // Sin stock para esta ciudad: no es una opción de compra, se descarta.
+          if (simItem?.availability === 'withoutStock') return;
+
+          const allSlas = sim.logisticsInfo?.find((l) => l.itemIndex === index)?.slas ?? [];
+          const delivery = allSlas.filter((s) => s.deliveryChannel === 'delivery');
+          const pickup = allSlas.filter((s) => s.deliveryChannel === 'pickup-in-point');
+
           // Precio regional real (algunas tiendas cambian el precio según la ciudad).
-          basePrice = simItem.sellingPrice / 100;
-          listPrice = simItem.listPrice > simItem.sellingPrice ? simItem.listPrice / 100 : null;
-          const cheapest = [...slas].sort(
-            (a, b) =>
-              a.price - b.price ||
-              (parseShippingEstimate(a.shippingEstimate) ?? 99) - (parseShippingEstimate(b.shippingEstimate) ?? 99),
-          )[0];
-          shippingCost = Math.round(cheapest.price / 100);
-          deliveryDays = parseShippingEstimate(cheapest.shippingEstimate);
-          shippingKnown = true;
+          if (simItem && simItem.sellingPrice > 0) {
+            basePrice = simItem.sellingPrice / 100;
+            listPrice = simItem.listPrice > simItem.sellingPrice ? simItem.listPrice / 100 : null;
+          }
+
+          if (simItem && simItem.sellingPrice > 0 && delivery.length > 0) {
+            const cheapest = [...delivery].sort(
+              (a, b) =>
+                a.price - b.price ||
+                (parseShippingEstimate(a.shippingEstimate) ?? 99) - (parseShippingEstimate(b.shippingEstimate) ?? 99),
+            )[0];
+            shippingCost = Math.round(cheapest.price / 100);
+            deliveryDays = parseShippingEstimate(cheapest.shippingEstimate);
+            shippingKnown = true;
+            availability = 'delivery';
+          } else {
+            // Se conserva la oferta, marcada, para que el usuario sepa que existe pero no le llega.
+            notShippable++;
+            availability = pickup.length > 0 ? 'pickup' : 'no_delivery';
+            notes.push(
+              availability === 'pickup'
+                ? `No hace envíos a domicilio a ${city.name}: solo se puede recoger en una tienda física.`
+                : `${config.name} no despacha este producto a ${city.name}.`,
+            );
+          }
         } else {
           notes.push('No pudimos cotizar el envío: se calcula en la tienda.');
         }
@@ -233,6 +249,7 @@ export function createVtexAdapter(config: VtexStoreConfig, deps: VtexDeps = {}):
           shippingCost,
           deliveryDays,
           shippingKnown,
+          availability,
           totalCost: Math.round(basePrice) + (shippingCost ?? 0),
           position: c.position,
           notes,

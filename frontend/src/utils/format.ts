@@ -23,6 +23,13 @@ export function formatShipping(offer: Pick<Offer, 'shippingCost' | 'shippingKnow
   return offer.shippingCost === 0 ? 'Gratis' : formatCOP(offer.shippingCost);
 }
 
+/** Texto corto del problema de disponibilidad, o null si la oferta llega a la ciudad. */
+export function availabilityLabel(offer: Pick<Offer, 'availability'>, cityName: string): string | null {
+  if (offer.availability === 'pickup') return `Solo recogida en tienda en ${cityName}`;
+  if (offer.availability === 'no_delivery') return `No se despacha a ${cityName}`;
+  return null;
+}
+
 export function plural(n: number, one: string, many: string): string {
   return `${n} ${n === 1 ? one : many}`;
 }

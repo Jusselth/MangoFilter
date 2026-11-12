@@ -54,12 +54,43 @@ describe('adaptador VTEX con respuestas reales', () => {
     expect(simCall[1].body).toMatchObject({ country: 'COL', postalCode: '11001' });
   });
 
-  it('cuenta como "no despacha" los productos sin opciones de envío', async () => {
+  it('conserva y marca como "no despacha" los productos sin opciones de envío', async () => {
     const noShipping: VtexSimulationResponse = { ...simulation, logisticsInfo: simulation.logisticsInfo!.map((l) => ({ ...l, slas: [] })) };
     const adapter = createVtexAdapter(store, { fetchJson: fakeHttp(noShipping) });
     const result = await adapter.search('televisor samsung 55', bogota, new AbortController().signal);
-    expect(result.offers).toHaveLength(0);
-    expect(result.notShippable).toBeGreaterThan(0);
+    expect(result.offers.length).toBeGreaterThan(0);
+    expect(result.notShippable).toBe(result.offers.length);
+    for (const o of result.offers) {
+      expect(o.availability).toBe('no_delivery');
+      expect(o.shippingKnown).toBe(false);
+      expect(o.shippingCost).toBeNull();
+      expect(o.notes.join(' ')).toContain('no despacha este producto a Bogotá');
+    }
+  });
+
+  it('marca como "solo recogida" lo que únicamente se puede recoger en tienda', async () => {
+    const pickupOnly: VtexSimulationResponse = {
+      ...simulation,
+      logisticsInfo: simulation.logisticsInfo!.map((l) => ({
+        ...l,
+        slas: [{ id: 'tienda', name: 'Recoge en tienda', deliveryChannel: 'pickup-in-point', price: 0, shippingEstimate: '1bd' }],
+      })),
+    };
+    const adapter = createVtexAdapter(store, { fetchJson: fakeHttp(pickupOnly) });
+    const { offers } = await adapter.search('televisor samsung 55', bogota, new AbortController().signal);
+    expect(offers.length).toBeGreaterThan(0);
+    expect(offers.every((o) => o.availability === 'pickup' && o.deliveryDays === null)).toBe(true);
+  });
+
+  it('descarta lo que la simulación reporta sin stock (respuesta real de Carulla)', async () => {
+    const carSearch = JSON.parse(readFileSync(new URL('./fixtures/carulla-search.json', import.meta.url), 'utf8')) as VtexSearchResponse;
+    const carSim = JSON.parse(readFileSync(new URL('./fixtures/carulla-simulation.json', import.meta.url), 'utf8')) as VtexSimulationResponse;
+    const http = vi.fn(async (url: string) => (url.includes('intelligent-search') ? carSearch : carSim)) as never;
+    const carulla = { id: 'carulla', name: 'Carulla', short: 'CA', color: '#00553A', website: 'https://www.carulla.com' };
+    const { offers } = await createVtexAdapter(carulla, { fetchJson: http }).search('televisor samsung', bogota, new AbortController().signal);
+    // 4 productos en la búsqueda; el primero viene "withoutStock" en la simulación.
+    expect(offers).toHaveLength(3);
+    expect(offers.every((o) => o.availability === 'delivery')).toBe(true);
   });
 
   it('si falla la simulación usa el precio publicado y marca el envío como desconocido', async () => {

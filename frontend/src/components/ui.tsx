@@ -293,10 +293,10 @@ export function SegmentedControl<T extends string>({
 
 /* ------------------------------ Etiquetas -------------------------------- */
 
-export function Tag({ label, icon, tone = 'brand' }: { label: string; icon?: IconName; tone?: 'brand' | 'leaf' | 'muted' }) {
+export function Tag({ label, icon, tone = 'brand' }: { label: string; icon?: IconName; tone?: 'brand' | 'leaf' | 'muted' | 'danger' }) {
   const { colors, radius } = useTheme();
-  const bg = { brand: colors.brandSoft, leaf: colors.leafSoft, muted: colors.surfaceAlt }[tone];
-  const fg = { brand: colors.brandStrong, leaf: colors.leaf, muted: colors.textMuted }[tone];
+  const bg = { brand: colors.brandSoft, leaf: colors.leafSoft, muted: colors.surfaceAlt, danger: colors.surfaceAlt }[tone];
+  const fg = { brand: colors.brandStrong, leaf: colors.leaf, muted: colors.textMuted, danger: colors.danger }[tone];
   return (
     <View style={[styles.tag, { backgroundColor: bg, borderRadius: radius.pill }]}>
       {icon ? <Ionicons name={icon} size={13} color={fg} /> : null}

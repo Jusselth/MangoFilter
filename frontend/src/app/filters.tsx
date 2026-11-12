@@ -9,6 +9,7 @@ import { useGetStoresQuery } from '../store/api';
 import {
   resetFilters,
   setFreeShippingOnly,
+  setHideUndeliverable,
   setMaxBudget,
   setMaxDeliveryDays,
   toggleStore,
@@ -94,6 +95,25 @@ export default function FiltersScreen() {
             trackColor={{ true: colors.brand, false: colors.border }}
             thumbColor={colors.surface}
             accessibilityLabel="Solo envío gratis"
+          />
+        </View>
+
+        <View style={[styles.switchRow, { borderColor: colors.border, backgroundColor: colors.surface, borderRadius: radius.md }]}>
+          <View style={{ flex: 1 }}>
+            <AppText variant="bodyStrong">Ocultar lo que no llega a mi ciudad</AppText>
+            <AppText variant="caption" tone="muted">
+              Quita las ofertas que la tienda no despacha a tu ciudad o que solo se pueden recoger en tienda. Si está apagado, se muestran con un
+              aviso.
+            </AppText>
+          </View>
+          <Switch
+            value={filters.hideUndeliverable}
+            onValueChange={(v) => {
+              dispatch(setHideUndeliverable(v));
+            }}
+            trackColor={{ true: colors.brand, false: colors.border }}
+            thumbColor={colors.surface}
+            accessibilityLabel="Ocultar lo que no llega a mi ciudad"
           />
         </View>
 

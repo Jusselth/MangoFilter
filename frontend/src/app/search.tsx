@@ -84,7 +84,8 @@ export default function SearchScreen() {
             ) : null}
             {notShippable > 0 ? (
               <AppText variant="caption" tone="muted">
-                {plural(notShippable, 'producto encontrado no se despacha', 'productos encontrados no se despachan')} a {data.city.name}.
+                {plural(notShippable, 'oferta no llega', 'ofertas no llegan')} a domicilio a {data.city.name}: las marcamos con un aviso
+                {filters.hideUndeliverable ? ' y las ocultamos (filtro activo)' : ''}.
               </AppText>
             ) : null}
           </View>

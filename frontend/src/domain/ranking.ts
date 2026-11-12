@@ -1,4 +1,4 @@
-import type { Offer, ProductGroup } from '../api/types';
+import type { Availability, Offer, ProductGroup } from '../api/types';
 
 /**
  * Motor de filtrado multicriterio (sección 3.2.4 de la propuesta). Corre en el
@@ -28,9 +28,17 @@ export interface RankedGroup extends ProductGroup {
   best: Offer;
   minTotal: number;
   maxTotal: number;
-  /** Diferencia entre la oferta más cara y la mejor. */
+  /** Diferencia entre la oferta más cara y la mejor (solo entre las que llegan a la ciudad). */
   savings: number;
+  /** Ofertas del producto que NO llegan a domicilio a la ciudad (solo recogida o no despacha). */
+  undeliverable: number;
 }
+
+/** true si la oferta puede llegar a la ciudad (o no se pudo confirmar y se verifica en la tienda). */
+export const isDeliverable = (o: Pick<Offer, 'availability'>) => o.availability === 'delivery' || o.availability === 'unknown';
+
+/** Orden de disponibilidad: primero lo que llega con envío confirmado, al final lo que no llega. */
+const AVAILABILITY_ORDER: Record<Availability, number> = { delivery: 0, unknown: 1, pickup: 2, no_delivery: 3 };
 
 /** Días usados para puntuar cuando la tienda no informó el tiempo de entrega. */
 const UNKNOWN_DAYS = 15;
@@ -63,14 +71,22 @@ export function scoreOffers(offers: Offer[], weight: number): Map<string, number
 }
 
 /**
- * Ordena ofertas. Las que tienen envío confirmado van primero: una oferta con
- * envío desconocido no puede ser "la mejor" porque su total podría subir.
+ * Ordena ofertas por disponibilidad y luego por puntaje:
+ *  1. Envío confirmado a la ciudad.
+ *  2. Envío desconocido: no puede ser "la mejor" porque su total podría subir.
+ *  3. Solo recogida en tienda y 4. No despacha a la ciudad: nunca son "la mejor".
+ * El puntaje se calcula dentro de cada nivel, para que los precios sin envío
+ * de las ofertas que no llegan no distorsionen la comparación de las que sí.
  */
 export function rankOffers(offers: Offer[], criterion: Criterion): Offer[] {
-  const scores = scoreOffers(offers, CRITERION_WEIGHT[criterion]);
+  const scores = new Map<string, number>();
+  for (const tier of new Set(offers.map((o) => AVAILABILITY_ORDER[o.availability]))) {
+    const subset = offers.filter((o) => AVAILABILITY_ORDER[o.availability] === tier);
+    for (const [id, score] of scoreOffers(subset, CRITERION_WEIGHT[criterion])) scores.set(id, score);
+  }
   return [...offers].sort(
     (a, b) =>
-      Number(b.shippingKnown) - Number(a.shippingKnown) ||
+      AVAILABILITY_ORDER[a.availability] - AVAILABILITY_ORDER[b.availability] ||
       scores.get(a.id)! - scores.get(b.id)! ||
       a.totalCost - b.totalCost ||
       daysOf(a) - daysOf(b),
@@ -83,6 +99,8 @@ export interface OfferFilters {
   stores: string[];
   freeShippingOnly: boolean;
   maxDeliveryDays: number | null;
+  /** Oculta las ofertas que no llegan a domicilio a la ciudad. */
+  hideUndeliverable: boolean;
 }
 
 export const DEFAULT_FILTERS: OfferFilters = {
@@ -90,10 +108,12 @@ export const DEFAULT_FILTERS: OfferFilters = {
   stores: [],
   freeShippingOnly: false,
   maxDeliveryDays: null,
+  hideUndeliverable: false,
 };
 
 export function offerPassesFilters(offer: Offer, f: OfferFilters): boolean {
   if (f.stores.length > 0 && !f.stores.includes(offer.store.id)) return false;
+  if (f.hideUndeliverable && !isDeliverable(offer)) return false;
   if (f.maxBudget !== null && offer.totalCost > f.maxBudget) return false;
   if (f.freeShippingOnly && offer.shippingCost !== 0) return false;
   if (f.maxDeliveryDays !== null && (offer.deliveryDays === null || offer.deliveryDays > f.maxDeliveryDays)) return false;
@@ -101,13 +121,23 @@ export function offerPassesFilters(offer: Offer, f: OfferFilters): boolean {
 }
 
 export function countActiveFilters(f: OfferFilters): number {
-  return (f.maxBudget !== null ? 1 : 0) + (f.stores.length > 0 ? 1 : 0) + (f.freeShippingOnly ? 1 : 0) + (f.maxDeliveryDays !== null ? 1 : 0);
+  return (f.maxBudget !== null ? 1 : 0) + (f.stores.length > 0 ? 1 : 0) + (f.freeShippingOnly ? 1 : 0) + (f.maxDeliveryDays !== null ? 1 : 0) + (f.hideUndeliverable ? 1 : 0);
 }
 
 export function rankGroup(group: ProductGroup, criterion: Criterion): RankedGroup {
   const offers = rankOffers(group.offers, criterion);
-  const [minTotal, maxTotal] = minMax(offers.map((o) => o.totalCost));
-  return { ...group, offers, best: offers[0], minTotal, maxTotal, savings: maxTotal - offers[0].totalCost };
+  const reachable = offers.filter(isDeliverable);
+  const compared = reachable.length > 0 ? reachable : offers;
+  const [minTotal, maxTotal] = minMax(compared.map((o) => o.totalCost));
+  return {
+    ...group,
+    offers,
+    best: offers[0],
+    minTotal,
+    maxTotal,
+    savings: reachable.length > 0 ? maxTotal - offers[0].totalCost : 0,
+    undeliverable: offers.length - reachable.length,
+  };
 }
 
 /**

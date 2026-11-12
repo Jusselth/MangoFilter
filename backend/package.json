@@ -10,17 +10,24 @@
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "smoke": "tsx scripts/smoke.ts"
+    "smoke": "tsx scripts/smoke.ts",
+    "check": "tsx scripts/check-setup.ts"
   },
   "engines": {
     "node": ">=20"
   },
   "dependencies": {
     "@fastify/cors": "^11.4.1",
-    "fastify": "^5.12.8"
+    "@fastify/rate-limit": "^11.2.2",
+    "fastify": "^5.12.8",
+    "nodemailer": "^10.5.0",
+    "pg": "^8.23.1"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
     "@types/node": "^26.6.6",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pg": "^8.23.1",
     "tsx": "^4.23.15",
     "typescript": "~6.0.3",
     "vitest": "^5.1.0"

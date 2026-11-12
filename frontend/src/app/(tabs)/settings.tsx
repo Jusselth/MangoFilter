@@ -1,5 +1,6 @@
 import { StyleSheet, Switch, View } from 'react-native';
 
+import { AccountSection } from '../../components/AccountSection';
 import { CityList } from '../../components/CityList';
 import { TabScreen } from '../../components/TabScreen';
 import { AppText, Card, SectionTitle, SegmentedControl, TextButton } from '../../components/ui';
@@ -25,6 +26,8 @@ export default function SettingsScreen() {
 
   return (
     <TabScreen title="Ajustes">
+      <AccountSection />
+
       <View style={{ gap: spacing.sm }}>
         <SectionTitle title="Ciudad de entrega" />
         <CityList value={prefs.city} onChange={(c) => dispatch(setCity({ id: c.id, name: c.name }))} />
@@ -69,7 +72,7 @@ export default function SettingsScreen() {
         <SectionTitle title="Datos" />
         <TextButton
           icon="time-outline"
-          label={historyCount > 0 ? `Borrar historial de búsqueda (${historyCount})` : 'Historial vacío'}
+          label={historyCount > 0 ? `Borrar historial de búsquedas y visitas (${historyCount})` : 'Borrar historial de búsquedas y visitas'}
           onPress={() => dispatch(clearHistory())}
         />
         <TextButton

@@ -16,7 +16,7 @@ function okAdapter(id: string, title: string, price: number): StoreAdapter {
     async search() {
       const o: Offer = {
         id: `${id}:1`, store, title, normalizedTitle: normalizeTitle(title), brand: 'oster', category: null, imageUrl: null,
-        url: `https://${id}.co/p`, basePrice: price, listPrice: null, shippingCost: 0, deliveryDays: 2, shippingKnown: true, totalCost: price, position: 0, notes: [],
+        url: `https://${id}.co/p`, basePrice: price, listPrice: null, shippingCost: 0, deliveryDays: 2, shippingKnown: true, availability: 'delivery', totalCost: price, position: 0, notes: [],
       };
       return { offers: [o], notShippable: 0, fromCache: false };
     },

@@ -16,6 +16,7 @@ const offer = (id: string, total: number, days: number | null, extra: Partial<Of
   shippingCost: 0,
   deliveryDays: days,
   shippingKnown: true,
+  availability: 'delivery',
   totalCost: total,
   position: 0,
   notes: [],
@@ -40,8 +41,31 @@ describe('ordenamiento multicriterio', () => {
   });
 
   it('una oferta con envío desconocido nunca es la mejor si hay envíos confirmados', () => {
-    const unknown = offer('d:sin-envio', 900_000, null, { shippingKnown: false, shippingCost: null });
+    const unknown = offer('d:sin-envio', 900_000, null, { shippingKnown: false, shippingCost: null, availability: 'unknown' });
     expect(rankOffers([unknown, pricyFast], 'precio')[0].id).toBe('b:caro-rapido');
+  });
+});
+
+describe('ofertas que no llegan a la ciudad', () => {
+  const noLlega = offer('e:no-llega', 500_000, null, { shippingKnown: false, shippingCost: null, availability: 'no_delivery' });
+  const recoger = offer('f:recoger', 600_000, null, { shippingKnown: false, shippingCost: null, availability: 'pickup' });
+  const llega = offer('g:llega', 1_200_000, 3);
+  const group: ProductGroup = { id: 'g', name: 'G', brand: null, imageUrl: null, offers: [noLlega, recoger, llega] };
+
+  it('nunca son la mejor opción aunque sean más baratas, y van al final', () => {
+    expect(rankOffers([noLlega, recoger, llega], 'precio').map((o) => o.id)).toEqual(['g:llega', 'f:recoger', 'e:no-llega']);
+    const [ranked] = rankResults([group], 'precio', DEFAULT_FILTERS);
+    expect(ranked.best.id).toBe('g:llega');
+    expect(ranked.undeliverable).toBe(2);
+    expect(ranked.savings).toBe(0); // el ahorro solo compara lo que sí llega
+  });
+
+  it('el filtro "ocultar lo que no llega" las quita (y quita productos sin opciones)', () => {
+    const [ranked] = rankResults([group], 'precio', { ...DEFAULT_FILTERS, hideUndeliverable: true });
+    expect(ranked.offers.map((o) => o.id)).toEqual(['g:llega']);
+    const soloNoLlega: ProductGroup = { ...group, id: 'x', offers: [noLlega] };
+    expect(rankResults([soloNoLlega], 'precio', { ...DEFAULT_FILTERS, hideUndeliverable: true })).toEqual([]);
+    expect(countActiveFilters({ ...DEFAULT_FILTERS, hideUndeliverable: true })).toBe(1);
   });
 });
 

@@ -1,6 +1,7 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
 import type { Criterion } from '../../domain/ranking';
+import { accountLoaded } from './sessionSlice';
 
 export type ThemeMode = 'system' | 'light' | 'dark';
 
@@ -39,6 +40,10 @@ const preferencesSlice = createSlice({
     setHaptics(state, action: PayloadAction<boolean>) {
       state.haptics = action.payload;
     },
+  },
+  extraReducers: (builder) => {
+    // Al entrar a la cuenta se aplican las preferencias guardadas en el servidor.
+    builder.addCase(accountLoaded, (state, action) => (action.payload.preferences ? { ...state, ...action.payload.preferences } : state));
   },
 });
 
