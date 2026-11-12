@@ -1,14 +1,16 @@
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
+import { useMemo } from 'react';
 import { Linking, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import Animated, { FadeInDown, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { RecommendedSection, TopStoresSection, TrendingSection } from '../../components/HomeInsights';
-import { SearchBar } from '../../components/SearchBar';
+import { SearchBar, type Suggestion } from '../../components/SearchBar';
 import { AppText, Chip, SectionTitle, Skeleton, StoreBadge, TextButton } from '../../components/ui';
 import { useAppDispatch, useAppSelector } from '../../store';
-import { describeApiError, useGetStoresQuery } from '../../store/api';
+import { describeApiError, useGetStoresQuery, useGetTrendingQuery } from '../../store/api';
 import { addQuery, clearHistory } from '../../store/slices/historySlice';
 import { useTheme } from '../../theme/ThemeContext';
 
@@ -21,7 +23,22 @@ export default function HomeScreen() {
   const dispatch = useAppDispatch();
   const cityName = useAppSelector((s) => s.preferences.cityName);
   const history = useAppSelector((s) => s.history.queries);
+  const city = useAppSelector((s) => s.preferences.city);
   const stores = useGetStoresQuery();
+  // Misma consulta que "Lo más buscado" (RTK Query la comparte): alimenta las sugerencias al escribir.
+  const trending = useGetTrendingQuery(city);
+
+  const suggestions = useMemo<Suggestion[]>(
+    () => [
+      ...history.map((query) => ({ query, icon: 'time-outline' as const })),
+      ...(trending.data?.queries ?? []).map((t) => ({ query: t.query, icon: 'trending-up' as const })),
+      ...IDEAS.map((query) => ({ query, icon: 'sparkles-outline' as const })),
+    ],
+    [history, trending.data],
+  );
+
+  /** Entrada sutil del contenido (respeta "reducir movimiento" del sistema). */
+  const enter = (i: number) => FadeInDown.delay(80 + i * 70).duration(320).reduceMotion(ReduceMotion.System);
 
   const search = (q: string) => {
     dispatch(addQuery(q));
@@ -44,9 +61,21 @@ export default function HomeScreen() {
           <View style={[styles.logo, { backgroundColor: 'rgba(255,255,255,0.55)' }]}>
             <Ionicons name="leaf" size={16} color="#2E7D32" />
           </View>
-          <AppText variant="heading" style={{ color: colors.onHero }}>
+          <AppText variant="heading" style={{ color: colors.onHero, flex: 1 }}>
             MangoFilter
           </AppText>
+          <Pressable
+            onPress={() => router.push({ pathname: '/welcome', params: { replay: '1' } })}
+            accessibilityRole="button"
+            accessibilityLabel="Cómo funciona MangoFilter. Ver el tour"
+            hitSlop={8}
+            style={({ pressed }) => [styles.help, { opacity: pressed ? 0.6 : 1 }]}
+          >
+            <Ionicons name="help-circle-outline" size={18} color={colors.onHero} />
+            <AppText variant="label" style={{ color: colors.onHero }}>
+              ¿Cómo funciona?
+            </AppText>
+          </Pressable>
         </View>
         <AppText variant="display" accessibilityRole="header" style={{ color: colors.onHero }}>
           Compara en todas las tiendas, paga lo justo.
@@ -55,7 +84,7 @@ export default function HomeScreen() {
       </LinearGradient>
 
       <View style={[styles.searchWrap, { paddingHorizontal: spacing.lg }]}>
-        <SearchBar onSubmit={search} placeholder='Busca un producto: "freidora", "tv samsung"…' />
+        <SearchBar onSubmit={search} suggestions={suggestions} placeholder='Busca un producto: "freidora", "tv samsung"…' />
         <Pressable
           onPress={() => router.push('/city')}
           accessibilityRole="button"
@@ -73,7 +102,8 @@ export default function HomeScreen() {
         </Pressable>
       </View>
 
-      <View style={{ paddingHorizontal: spacing.lg, gap: spacing.xl, marginTop: spacing.lg }}>
+      {/* Una sola entrada animada: envolver cada sección dejaría huecos cuando una sección no tiene datos y no se muestra. */}
+      <Animated.View entering={enter(0)} style={{ paddingHorizontal: spacing.lg, gap: spacing.xl, marginTop: spacing.lg }}>
         {history.length > 0 ? (
           <View style={{ gap: spacing.sm }}>
             <SectionTitle title="Búsquedas recientes" action={<TextButton label="Borrar" onPress={() => dispatch(clearHistory())} />} />
@@ -132,9 +162,13 @@ export default function HomeScreen() {
           )}
           <AppText variant="caption" tone="muted">
             Precios, envíos y enlaces se consultan en vivo en cada tienda. Pueden cambiar sin previo aviso: confirma siempre en la tienda antes de pagar.
+            MangoFilter no vende productos: la compra se hace directamente en cada tienda.{' '}
+            <AppText variant="caption" tone="brand" onPress={() => router.push('/terms')} accessibilityRole="link">
+              Términos de uso
+            </AppText>
           </AppText>
         </View>
-      </View>
+      </Animated.View>
     </ScrollView>
   );
 }
@@ -142,6 +176,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   hero: { paddingHorizontal: 20, paddingBottom: 56, gap: 10 },
   brandRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 12 },
+  help: { flexDirection: 'row', alignItems: 'center', gap: 4, minHeight: 44, paddingLeft: 8 },
   logo: { width: 30, height: 30, borderRadius: 10, alignItems: 'center', justifyContent: 'center' },
   searchWrap: { marginTop: -28, gap: 4 },
   cityRow: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 44, paddingHorizontal: 8 },

@@ -116,8 +116,12 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"   # gen
 
 ---
 
-## Funcionalidades (v0.3)
+## Funcionalidades (v0.5)
 
+- **Bienvenida la primera vez:** qué es MangoFilter, qué hace, un mini tour de 7 pasos y el aviso de edad y exención de responsabilidad, que hay que aceptar para entrar. Se puede repetir desde Inicio ("¿Cómo funciona?") o Ajustes.
+- **Invitación a crear cuenta** (solo para quien no tiene sesión y si las cuentas están activas): al terminar la bienvenida y al guardar el primer producto de cada apertura de la app. Explica que sirve para sincronizar los guardados. Como máximo una vez por apertura y con "Ahora no".
+- **Términos de uso y exención de responsabilidad:** MangoFilter compara y filtra, pero no vende, no cobra ni procesa pagos. Las compras son directamente con cada tienda. App dirigida a mayores de 18 años.
+- **Barra de búsqueda dinámica:** la lupa busca (con el campo vacío lo enfoca), sugerencias mientras escribes (historial, lo más buscado e ideas, sin importar tildes) y aviso si faltan letras.
 - **Búsqueda en vivo** en 5 tiendas reales a la vez: Olímpica, Jumbo, Carulla, Pepe Ganga y Panamericana. Mercado Libre se suma si hay credenciales.
 - **Precio real para tu ciudad** (algunas tiendas tienen precios regionales) y **envío cotizado por la propia tienda**: costo y días hábiles, en 22 ciudades. Si una tienda no despacha a tu ciudad, se avisa ("32 productos no se despachan a Leticia").
 - **Agrupa el mismo producto entre tiendas** con Entity Resolution (Jaro‑Winkler, códigos de fabricante y reglas de variante y precio), para compararlo lado a lado.
@@ -179,6 +183,34 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"   # gen
 ---
 
 ## Registro de cambios
+
+### v0.5.0 — 2026‑11‑12 · Invitación a crear cuenta
+**Frontend**
+- Nueva pantalla `app/account-prompt.tsx`: hoja inferior sobre la pantalla actual (`transparentModal`) con fondo oscurecido y animación de entrada. Explica los beneficios reales de la cuenta: guardados sincronizados en todos los dispositivos, preferencias que se recargan, recomendaciones y no perder nada al cambiar de celular. Recuerda que no hay contraseña y que lo guardado en el dispositivo se suma a la cuenta. Botones "Crear cuenta o entrar" (abre `login`; al terminar vuelve a donde estaba) y "Ahora no". Tocar fuera también cierra.
+- Dos textos según el motivo: `reason=welcome` ("Crea tu cuenta gratis") y `reason=save` ("No pierdas tus guardados", con la etiqueta "Producto guardado en este dispositivo": el producto queda guardado igual).
+- Hook `useAccountPrompt`: muestra la invitación **como máximo una vez por apertura de la app** y solo si la persona es invitada y el backend reporta `features.accounts` (sin base de datos o sin conexión no se invita a algo que no funcionaría). La marca `accountPromptShown` vive en el slice `session`, que no se persiste, así que vuelve a `false` cada vez que se abre la app.
+- Se dispara al aceptar la bienvenida y al **guardar** (no al quitar) un producto. Si ya se mostró al terminar la bienvenida, no se repite al guardar en esa misma apertura.
+
+**Verificación**
+- Typecheck y lint OK.
+- Recorrido en Chrome con el backend real (cuentas activas): tour → aceptar → invitación "Crea tu cuenta gratis" → "Ahora no" vuelve a Inicio → guardar en la misma apertura no invita → recargar (nueva apertura) → quitar no invita → guardar invita ("No pierdas tus guardados") y el producto sigue guardado tras "Ahora no" → un segundo guardado no invita → en otra apertura, "Crear cuenta o entrar" abre `/login`. Sin errores de consola.
+
+### v0.4.0 — 2026‑11‑12 · Lupa funcional, bienvenida con tour y exención de responsabilidad
+**Frontend**
+- **Barra de búsqueda** (`SearchBar`): la lupa ahora es un botón. Con texto busca, con el campo vacío lo enfoca y muestra "Escribe qué producto quieres comparar", y con menos de 2 letras avisa en vez de buscar. Se colorea cuando hay texto, tiene una animación de pulsación (respeta "reducir movimiento") y vibra al buscar. El borde se resalta al enfocar. "Borrar" devuelve el foco al campo.
+- **Sugerencias al escribir:** en Inicio, del historial, de "Lo más buscado" (datos reales, misma consulta en caché) y de las ideas; en Resultados, del historial. La coincidencia no distingue tildes ni mayúsculas.
+- Buscar de nuevo lo mismo en Resultados vuelve a consultar en vez de no hacer nada.
+- Inicio: entrada animada del contenido y enlace "¿Cómo funciona?" en el encabezado.
+- **Bienvenida** (`app/welcome.tsx`, 5 páginas deslizables con puntos de progreso): 1) qué es y para qué sirve, con las tiendas reales que se comparan; 2) qué hace; 3–4) mini tour en 7 pasos con maquetas de la barra, la ciudad, los filtros, el criterio (se puede elegir ahí mismo), el desglose del total, "Ver en la tienda" y guardados; 5) "Antes de empezar": resumen de los términos y dos casillas obligatorias (edad y "MangoFilter no vende"). "Saltar tour" lleva a la última página: el tour se puede saltar, el aviso no.
+- La aceptación se guarda en el dispositivo (slice `onboarding`, persistido) con la versión de los términos (`TERMS_VERSION`). Si los términos cambian, se sube la versión y la bienvenida vuelve a pedirla. `(tabs)/_layout` redirige a `/welcome` mientras no se haya aceptado.
+- **Términos de uso** (`app/terms.tsx`): qué es y qué no es MangoFilter, compras entre el usuario y la tienda (Ley 1480 de 2011), precios e información, edad (18+; menores solo con supervisión y sin cuenta), enlaces y marcas de terceros, limitación de responsabilidad y contacto. El resumen vive en `src/legal.ts`.
+- Recordatorios de "MangoFilter no vende" con enlace a los términos en Inicio, en el detalle del producto y en Ajustes.
+- Ajustes: nueva sección **Ayuda y legal** (ver el tour de nuevo, términos y aviso de privacidad).
+- Aviso de privacidad: nueva sección "Menores de edad". Al crear la cuenta, la casilla también confirma que la persona es mayor de 18 años.
+
+**Verificación**
+- Typecheck, lint y 9 pruebas del frontend OK.
+- Recorrido en Chrome (390×844, claro y oscuro) con el backend real: primera apertura → `/welcome` → 5 páginas → "Aceptar y empezar" sin casillas muestra el error → con casillas entra a Inicio → lupa con campo vacío muestra la ayuda → "lic" sugiere "licuadora oster" → la lupa busca "freidora de aire" (45 productos, 5/5 tiendas) → al recargar ya no aparece la bienvenida → tour repetido con botón "Cerrar". Sin errores de consola.
 
 ### v0.3.0 — 2026‑11‑11 · Cuentas, estadísticas, recomendaciones y aviso de despacho
 **Backend**
@@ -293,7 +325,8 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"   # gen
 2. Probar Mercado Libre con credenciales reales y ajustar su adaptador si hace falta.
 3. Agregar más tiendas VTEX que se verifiquen públicas (basta una línea en `backend/src/stores/registry.ts`).
 4. Historial de precios (caché L2, ya hay base de datos) con un gráfico en el detalle, y avisos cuando baja el precio de un guardado.
-5. Filtros de color para daltonismo y opción de tipografía Atkinson Hyperlegible.
-6. Pruebas de componentes con React Native Testing Library.
-7. Recomendaciones colaborativas ("quienes buscaron X también buscaron Y") cuando haya suficientes usuarios.
-8. Varias instancias del backend: mover el límite de peticiones y la caché a Redis.
+5. Guardar en la cuenta (servidor) la versión de los términos aceptada, para no volver a pedirla en cada dispositivo.
+6. Filtros de color para daltonismo y opción de tipografía Atkinson Hyperlegible.
+7. Pruebas de componentes con React Native Testing Library.
+8. Recomendaciones colaborativas ("quienes buscaron X también buscaron Y") cuando haya suficientes usuarios.
+9. Varias instancias del backend: mover el límite de peticiones y la caché a Redis.

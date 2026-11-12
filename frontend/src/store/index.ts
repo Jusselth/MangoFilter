@@ -7,6 +7,7 @@ import { accountSync } from './accountSync';
 import { api } from './api';
 import filters from './slices/filtersSlice';
 import history from './slices/historySlice';
+import onboarding from './slices/onboardingSlice';
 import preferences from './slices/preferencesSlice';
 import saved from './slices/savedSlice';
 import session from './slices/sessionSlice';
@@ -17,17 +18,19 @@ const rootReducer = combineReducers({
   saved,
   history,
   session,
+  onboarding,
   [api.reducerPath]: api.reducer,
 });
 
 /**
- * Solo se persisten preferencias, guardados e historial (clave v2: la v1 tenía
+ * Se persisten preferencias, guardados, historial y la aceptación de los
+ * términos de la bienvenida (`onboarding`) (clave v2: la v1 tenía
  * datos de demostración y se descarta). Los filtros son de la sesión, la caché
  * de RTK Query se reconstruye al consultar y la sesión de la cuenta vive en
  * almacenamiento seguro (auth/storage.ts), nunca en AsyncStorage.
  */
 const persistedReducer = persistReducer(
-  { key: 'mangofilter-v2', version: 2, storage: AsyncStorage, whitelist: ['preferences', 'saved', 'history'] },
+  { key: 'mangofilter-v2', version: 2, storage: AsyncStorage, whitelist: ['preferences', 'saved', 'history', 'onboarding'] },
   rootReducer,
 );
 

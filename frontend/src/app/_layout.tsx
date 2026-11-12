@@ -76,6 +76,12 @@ function RootStack() {
         <Stack.Screen name="city" options={{ presentation: 'modal', title: 'Ciudad de entrega' }} />
         <Stack.Screen name="login" options={{ presentation: 'modal', title: 'Tu cuenta' }} />
         <Stack.Screen name="privacy" options={{ title: 'Aviso de privacidad' }} />
+        <Stack.Screen name="terms" options={{ title: 'Términos de uso' }} />
+        <Stack.Screen name="welcome" options={{ headerShown: false, gestureEnabled: false, animation: 'fade' }} />
+        <Stack.Screen
+          name="account-prompt"
+          options={{ presentation: 'transparentModal', headerShown: false, animation: 'fade', contentStyle: { backgroundColor: 'transparent' } }}
+        />
       </Stack>
     </>
   );

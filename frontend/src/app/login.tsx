@@ -122,7 +122,7 @@ export default function LoginScreen() {
                 onPress={() => setAccepted((v) => !v)}
                 accessibilityRole="checkbox"
                 accessibilityState={{ checked: accepted }}
-                accessibilityLabel="Acepto el aviso de privacidad y el tratamiento de mis datos"
+                accessibilityLabel="Acepto el aviso de privacidad y el tratamiento de mis datos, y confirmo que soy mayor de 18 años"
                 hitSlop={6}
                 style={styles.checkbox}
               >
@@ -131,7 +131,7 @@ export default function LoginScreen() {
               <View style={{ flex: 1 }}>
                 <AppText variant="caption">
                   Acepto el aviso de privacidad y el tratamiento de mis datos (correo, guardados, preferencias y búsquedas) según la Ley 1581 de
-                  2012.
+                  2012, y confirmo que soy mayor de 18 años.
                 </AppText>
                 <TextButton label="Leer el aviso de privacidad" onPress={() => router.push('/privacy')} />
               </View>

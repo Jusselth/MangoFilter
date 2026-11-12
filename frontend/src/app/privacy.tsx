@@ -26,6 +26,13 @@ const SECTIONS: { title: string; body: string[] }[] = [
     ],
   },
   {
+    title: 'Menores de edad',
+    body: [
+      'MangoFilter está dirigida a mayores de 18 años y no recoge a sabiendas datos de menores de edad. Los menores solo deben usar la app con la supervisión de su padre, madre o acudiente, y no deben crear una cuenta.',
+      'Si eres padre, madre o acudiente y crees que un menor creó una cuenta, escríbenos y la eliminaremos junto con sus datos.',
+    ],
+  },
+  {
     title: 'Para qué los usamos',
     body: [
       'Para que tus guardados y preferencias se conserven y se recarguen cuando inicias sesión en cualquier dispositivo.',
@@ -57,7 +64,7 @@ export default function PrivacyScreen() {
   const insets = useSafeAreaInsets();
   return (
     <ScrollView contentContainerStyle={{ padding: spacing.lg, gap: spacing.lg, paddingBottom: insets.bottom + spacing.xxl }}>
-      <AppText tone="muted">Última actualización: 11 de noviembre de 2026.</AppText>
+      <AppText tone="muted">Última actualización: 12 de noviembre de 2026.</AppText>
       {SECTIONS.map((s) => (
         <View key={s.title} style={{ gap: spacing.xs }}>
           <AppText variant="heading" accessibilityRole="header">

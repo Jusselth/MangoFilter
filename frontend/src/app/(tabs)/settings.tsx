@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { StyleSheet, Switch, View } from 'react-native';
 
 import { AccountSection } from '../../components/AccountSection';
@@ -82,11 +83,19 @@ export default function SettingsScreen() {
         />
       </View>
 
+      <View style={{ gap: spacing.xs }}>
+        <SectionTitle title="Ayuda y legal" />
+        <TextButton icon="play-circle-outline" label="Ver de nuevo el tour de bienvenida" onPress={() => router.push({ pathname: '/welcome', params: { replay: '1' } })} />
+        <TextButton icon="document-text-outline" label="Términos de uso y exención de responsabilidad" onPress={() => router.push('/terms')} />
+        <TextButton icon="shield-checkmark-outline" label="Aviso de privacidad" onPress={() => router.push('/privacy')} />
+      </View>
+
       <Card elevated={0} style={{ padding: 16, gap: 6, backgroundColor: colors.surfaceAlt }}>
         <AppText variant="bodyStrong">Acerca de MangoFilter</AppText>
         <AppText variant="caption" tone="muted">
           Proyecto académico — Ingeniería Informática, Universidad de La Sabana. Los precios, envíos y enlaces se consultan en vivo en las
           tiendas a través de sus APIs públicas; pueden cambiar sin previo aviso, así que confirma siempre en la tienda antes de pagar.
+          MangoFilter no vende productos ni procesa pagos: las compras se hacen directamente en cada tienda. Dirigida a mayores de 18 años.
         </AppText>
         <AppText variant="caption" tone="muted" selectable>
           Servidor: {API_URL}

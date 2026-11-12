@@ -1,8 +1,9 @@
 import { Ionicons } from '@expo/vector-icons';
-import { Tabs } from 'expo-router';
+import { Redirect, Tabs } from 'expo-router';
 import { Platform, type ColorValue } from 'react-native';
 
 import { useAppSelector } from '../../store';
+import { TERMS_VERSION } from '../../store/slices/onboardingSlice';
 import { useTheme } from '../../theme/ThemeContext';
 import { fonts } from '../../theme/palette';
 import type { IconName } from '../../components/ui';
@@ -14,10 +15,17 @@ function icon(name: IconName, active: IconName) {
   return TabIcon;
 }
 
-/** Tres pestañas, sin más: buscar, guardados y ajustes. */
+/**
+ * Tres pestañas, sin más: buscar, guardados y ajustes.
+ * La primera vez (o si cambian los términos) se envía a la bienvenida, que
+ * explica la app y pide confirmar la edad y la exención de responsabilidad.
+ */
 export default function TabsLayout() {
   const { colors, shadow } = useTheme();
   const savedCount = useAppSelector((s) => s.saved.items.length);
+  const onboarded = useAppSelector((s) => s.onboarding.termsVersion >= TERMS_VERSION);
+
+  if (!onboarded) return <Redirect href="/welcome" />;
 
   return (
     <Tabs

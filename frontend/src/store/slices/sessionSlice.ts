@@ -13,9 +13,14 @@ export interface SessionState {
   status: 'loading' | 'guest' | 'authenticated';
   token: string | null;
   user: AccountUser | null;
+  /**
+   * Ya se mostró la invitación a crear cuenta desde que se abrió la app.
+   * Como este slice no se persiste, vuelve a `false` en cada apertura.
+   */
+  accountPromptShown: boolean;
 }
 
-const initialState: SessionState = { status: 'loading', token: null, user: null };
+const initialState: SessionState = { status: 'loading', token: null, user: null, accountPromptShown: false };
 
 const sessionSlice = createSlice({
   name: 'session',
@@ -38,6 +43,10 @@ const sessionSlice = createSlice({
       state.token = null;
       state.user = null;
     },
+    /** Se mostró la invitación a crear cuenta (al terminar la bienvenida o al guardar el primer producto). */
+    accountPromptDisplayed(state) {
+      state.accountPromptShown = true;
+    },
     /** Cerrar sesión, sesión vencida o cuenta eliminada: se borran del dispositivo los datos de la cuenta. */
     signedOut(state) {
       state.status = 'guest';
@@ -47,7 +56,7 @@ const sessionSlice = createSlice({
   },
 });
 
-export const { sessionRestored, signedIn, becameGuest, signedOut } = sessionSlice.actions;
+export const { sessionRestored, signedIn, becameGuest, signedOut, accountPromptDisplayed } = sessionSlice.actions;
 
 /**
  * Datos de la cuenta llegados del servidor (GET /api/me o POST /api/me/sync).

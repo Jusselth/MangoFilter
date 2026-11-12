@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import Animated, { FadeInDown, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -26,6 +26,8 @@ export default function SearchScreen() {
   const dispatch = useAppDispatch();
   const haptic = useHaptics();
   const cityName = useAppSelector((s) => s.preferences.cityName);
+  const history = useAppSelector((s) => s.history.queries);
+  const suggestions = useMemo(() => history.map((query) => ({ query, icon: 'time-outline' as const })), [history]);
   const { data, ranked, isFetching, isError, error, refetch, criterion, filters } = useRankedSearch(q);
 
   const activeFilters = countActiveFilters(filters);
@@ -36,6 +38,11 @@ export default function SearchScreen() {
 
   const onSearch = (next: string) => {
     dispatch(addQuery(next));
+    // Misma búsqueda: se vuelve a consultar (precios frescos) en vez de no hacer nada.
+    if (next === q) {
+      void refetch();
+      return;
+    }
     router.setParams({ q: next });
   };
 
@@ -113,7 +120,7 @@ export default function SearchScreen() {
       <View style={[styles.topBar, { paddingHorizontal: spacing.sm }]}>
         <IconButton icon="chevron-back" label="Volver" onPress={() => router.back()} />
         <View style={{ flex: 1 }}>
-          <SearchBar key={q} initialValue={q} onSubmit={onSearch} />
+          <SearchBar key={q} initialValue={q} onSubmit={onSearch} suggestions={suggestions} />
         </View>
         <Pressable
           onPress={() => router.push('/filters')}
